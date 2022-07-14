@@ -1,6 +1,8 @@
 disabled_rules:
 - line_length
+- leading_whitespace
+- trailing_whitespace
 
-Included:
-Excluded:
+included:
+excluded:
 - Pods
