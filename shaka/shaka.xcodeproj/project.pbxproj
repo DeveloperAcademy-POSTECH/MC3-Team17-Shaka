@@ -16,6 +16,8 @@
 		7547FD08287FF58500A8FA9A /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = 7547FD07287FF58500A8FA9A /* .swiftlint.yml */; };
 		7547FD0A287FF66700A8FA9A /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 7547FD09287FF66700A8FA9A /* .gitignore */; };
 		7547FD0C287FF70F00A8FA9A /* .gitattributes in Resources */ = {isa = PBXBuildFile; fileRef = 7547FD0B287FF70F00A8FA9A /* .gitattributes */; };
+		75767DB8288535DE00FC620A /* MapUserModal.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 75767DB7288535DE00FC620A /* MapUserModal.storyboard */; };
+		75FF0BA32888063F0063E259 /* MapModalController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75FF0BA22888063F0063E259 /* MapModalController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +32,8 @@
 		7547FD07287FF58500A8FA9A /* .swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
 		7547FD09287FF66700A8FA9A /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		7547FD0B287FF70F00A8FA9A /* .gitattributes */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitattributes; sourceTree = "<group>"; };
+		75767DB7288535DE00FC620A /* MapUserModal.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MapUserModal.storyboard; sourceTree = "<group>"; };
+		75FF0BA22888063F0063E259 /* MapModalController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapModalController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,7 +71,9 @@
 				7547FCED287FECA700A8FA9A /* AppDelegate.swift */,
 				7547FCEF287FECA700A8FA9A /* SceneDelegate.swift */,
 				7547FCF1287FECA700A8FA9A /* ViewController.swift */,
+				75FF0BA22888063F0063E259 /* MapModalController.swift */,
 				7547FCF3287FECA700A8FA9A /* Main.storyboard */,
+				75767DB7288535DE00FC620A /* MapUserModal.storyboard */,
 				7547FCF6287FECA800A8FA9A /* Assets.xcassets */,
 				7547FCF8287FECA800A8FA9A /* LaunchScreen.storyboard */,
 				7547FCFB287FECA800A8FA9A /* Info.plist */,
@@ -145,6 +151,7 @@
 				7547FCFA287FECA800A8FA9A /* LaunchScreen.storyboard in Resources */,
 				7547FCF7287FECA800A8FA9A /* Assets.xcassets in Resources */,
 				7547FCF5287FECA700A8FA9A /* Main.storyboard in Resources */,
+				75767DB8288535DE00FC620A /* MapUserModal.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -177,6 +184,7 @@
 			files = (
 				7547FCF2287FECA700A8FA9A /* ViewController.swift in Sources */,
 				7547FCEE287FECA700A8FA9A /* AppDelegate.swift in Sources */,
+				75FF0BA32888063F0063E259 /* MapModalController.swift in Sources */,
 				7547FCF0287FECA700A8FA9A /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -322,6 +330,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 5MNSFLP2V9;
@@ -329,7 +338,7 @@
 				INFOPLIST_FILE = shaka/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = MapUserModal;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -339,6 +348,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.i3e2.shaka;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -350,6 +360,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 5MNSFLP2V9;
@@ -357,7 +368,7 @@
 				INFOPLIST_FILE = shaka/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = MapUserModal;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -367,6 +378,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.i3e2.shaka;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
