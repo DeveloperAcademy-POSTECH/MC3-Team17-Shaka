@@ -16,6 +16,8 @@
 		7547FD08287FF58500A8FA9A /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = 7547FD07287FF58500A8FA9A /* .swiftlint.yml */; };
 		7547FD0A287FF66700A8FA9A /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 7547FD09287FF66700A8FA9A /* .gitignore */; };
 		7547FD0C287FF70F00A8FA9A /* .gitattributes in Resources */ = {isa = PBXBuildFile; fileRef = 7547FD0B287FF70F00A8FA9A /* .gitattributes */; };
+		79F899A22887E919005F819B /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79F899A12887E919005F819B /* MapViewController.swift */; };
+		79F899A42887E94B005F819B /* Map.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 79F899A32887E94B005F819B /* Map.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +32,8 @@
 		7547FD07287FF58500A8FA9A /* .swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
 		7547FD09287FF66700A8FA9A /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		7547FD0B287FF70F00A8FA9A /* .gitattributes */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitattributes; sourceTree = "<group>"; };
+		79F899A12887E919005F819B /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		79F899A32887E94B005F819B /* Map.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Map.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,7 +71,9 @@
 				7547FCED287FECA700A8FA9A /* AppDelegate.swift */,
 				7547FCEF287FECA700A8FA9A /* SceneDelegate.swift */,
 				7547FCF1287FECA700A8FA9A /* ViewController.swift */,
+				79F899A12887E919005F819B /* MapViewController.swift */,
 				7547FCF3287FECA700A8FA9A /* Main.storyboard */,
+				79F899A32887E94B005F819B /* Map.storyboard */,
 				7547FCF6287FECA800A8FA9A /* Assets.xcassets */,
 				7547FCF8287FECA800A8FA9A /* LaunchScreen.storyboard */,
 				7547FCFB287FECA800A8FA9A /* Info.plist */,
@@ -140,6 +146,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7547FD0A287FF66700A8FA9A /* .gitignore in Resources */,
+				79F899A42887E94B005F819B /* Map.storyboard in Resources */,
 				7547FD0C287FF70F00A8FA9A /* .gitattributes in Resources */,
 				7547FD08287FF58500A8FA9A /* .swiftlint.yml in Resources */,
 				7547FCFA287FECA800A8FA9A /* LaunchScreen.storyboard in Resources */,
@@ -178,6 +185,7 @@
 				7547FCF2287FECA700A8FA9A /* ViewController.swift in Sources */,
 				7547FCEE287FECA700A8FA9A /* AppDelegate.swift in Sources */,
 				7547FCF0287FECA700A8FA9A /* SceneDelegate.swift in Sources */,
+				79F899A22887E919005F819B /* MapViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
