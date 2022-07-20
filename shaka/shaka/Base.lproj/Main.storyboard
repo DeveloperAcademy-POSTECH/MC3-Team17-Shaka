@@ -1,24 +1,143 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="shaka" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SHAKA" translatesAutoresizingMaskIntoConstraints="NO" id="cwh-Ce-Bnp">
+                                <rect key="frame" x="25" y="54" width="29" height="27"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="29" id="lCj-gt-fo2"/>
+                                    <constraint firstAttribute="height" constant="29" id="prv-GK-jJY"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SHAKA" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9nb-xD-RVc">
+                                <rect key="frame" x="54" y="66" width="78" height="29"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="29" id="9a1-Aj-bGL"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <color key="textColor" name="shakaColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8hZ-a0-QOa">
+                                <rect key="frame" x="267" y="65" width="45" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="45" id="Cmn-5b-EeD"/>
+                                    <constraint firstAttribute="height" constant="31" id="duQ-WD-v2f"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="bell" catalog="system">
+                                    <color key="baseForegroundColor" systemColor="labelColor"/>
+                                </buttonConfiguration>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A1w-JA-8Rj">
+                                <rect key="frame" x="320" y="65" width="45" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="31" id="MI0-t4-C4o"/>
+                                    <constraint firstAttribute="width" constant="45" id="lEf-5z-yc8"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="person" catalog="system">
+                                    <color key="baseForegroundColor" systemColor="labelColor"/>
+                                </buttonConfiguration>
+                            </button>
+                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="bottom" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ilx-C8-Jcp">
+                                <rect key="frame" x="25" y="415" width="160" height="195"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="195" id="Gd5-EN-Hqm"/>
+                                    <constraint firstAttribute="width" constant="160" id="dpw-8z-CKC"/>
+                                </constraints>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title=""/>
+                                <buttonConfiguration key="configuration" style="filled" subtitle="날씨 보기 " titlePadding="7" cornerStyle="small" titleAlignment="center">
+                                    <backgroundConfiguration key="background" image="weather" imageContentMode="scaleAspectFill"/>
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="해안가">
+                                            <attributes>
+                                                <font key="NSFont" size="14" name=".AppleSDGothicNeoI-Regular"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                    <fontDescription key="subtitleFontDescription" type="boldSystem" pointSize="16"/>
+                                </buttonConfiguration>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="bottom" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WbE-SS-jnM">
+                                <rect key="frame" x="205" y="416" width="160" height="195"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="195" id="SII-PF-vfx"/>
+                                    <constraint firstAttribute="width" constant="160" id="dmM-CM-VX5"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" subtitle="서퍼 찾기 " titlePadding="7" cornerStyle="small" titleAlignment="center">
+                                    <backgroundConfiguration key="background" image="suffer" imageContentMode="scaleAspectFill"/>
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="주변의">
+                                            <attributes>
+                                                <font key="NSFont" size="14" name="AppleSDGothicNeo-Regular"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                    <fontDescription key="subtitleFontDescription" type="boldSystem" pointSize="16"/>
+                                </buttonConfiguration>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="ilx-C8-Jcp" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="25" id="3LK-7H-Cdo"/>
+                            <constraint firstItem="8hZ-a0-QOa" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="21" id="4Sn-i9-vSt"/>
+                            <constraint firstItem="A1w-JA-8Rj" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="21" id="5kH-I3-gbJ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="WbE-SS-jnM" secondAttribute="trailing" constant="25" id="AxK-ps-Aiu"/>
+                            <constraint firstItem="A1w-JA-8Rj" firstAttribute="leading" secondItem="8hZ-a0-QOa" secondAttribute="trailing" constant="8" symbolic="YES" id="BL4-j5-PdX"/>
+                            <constraint firstItem="cwh-Ce-Bnp" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="25" id="J5I-xj-6qO"/>
+                            <constraint firstItem="ilx-C8-Jcp" firstAttribute="top" secondItem="9nb-xD-RVc" secondAttribute="bottom" constant="320" id="X06-Ca-myB"/>
+                            <constraint firstItem="9nb-xD-RVc" firstAttribute="leading" secondItem="cwh-Ce-Bnp" secondAttribute="trailing" id="glY-vB-1ew"/>
+                            <constraint firstItem="cwh-Ce-Bnp" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="l1c-XK-TPZ"/>
+                            <constraint firstItem="WbE-SS-jnM" firstAttribute="top" secondItem="8hZ-a0-QOa" secondAttribute="bottom" constant="320" id="n8B-AN-eE8"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="A1w-JA-8Rj" secondAttribute="trailing" constant="25" id="oU4-ax-ksi"/>
+                            <constraint firstItem="9nb-xD-RVc" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="22" id="wDS-Yh-T4n"/>
+                            <constraint firstItem="9nb-xD-RVc" firstAttribute="leading" secondItem="cwh-Ce-Bnp" secondAttribute="trailing" id="wdP-uQ-p5H"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="weatherButton" destination="ilx-C8-Jcp" id="4kV-QI-9gI"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="47.826086956521742" y="85.714285714285708"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="SHAKA" width="116" height="114"/>
+        <image name="bell" catalog="system" width="128" height="124"/>
+        <image name="person" catalog="system" width="128" height="117"/>
+        <image name="suffer" width="640" height="380"/>
+        <image name="weather" width="640" height="359.66665649414062"/>
+        <namedColor name="shakaColor">
+            <color red="0.1803921568627451" green="0.34509803921568627" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>

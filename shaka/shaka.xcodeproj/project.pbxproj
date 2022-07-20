@@ -83,7 +83,8 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7547FCFE287FECA800A8FA9A /* Build configuration list for PBXNativeTarget "shaka" */;
 			buildPhases = (
-				7547FD06287FEF5400A8FA9A /* ShellScript */,
+				7547FD06287FEF5400A8FA9A /* Run Script */,
+				79F899A528881FB6005F819B /* Swift Lint */,
 				7547FCE6287FECA700A8FA9A /* Sources */,
 				7547FCE7287FECA700A8FA9A /* Frameworks */,
 				7547FCE8287FECA700A8FA9A /* Resources */,
@@ -151,7 +152,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		7547FD06287FEF5400A8FA9A /* ShellScript */ = {
+		7547FD06287FEF5400A8FA9A /* Run Script */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -160,6 +161,7 @@
 			);
 			inputPaths = (
 			);
+			name = "Run Script";
 			outputFileListPaths = (
 			);
 			outputPaths = (
@@ -167,6 +169,24 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "export PATH=\"$PATH:/opt/homebrew/bin\"\n\nif which swiftlint >/dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+		79F899A528881FB6005F819B /* Swift Lint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Swift Lint";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "export PATH=\"$PATH:/opt/homebrew/bin\"\nif which swiftlint > /dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
