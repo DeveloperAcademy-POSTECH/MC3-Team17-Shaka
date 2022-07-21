@@ -34,9 +34,8 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8hZ-a0-QOa">
-                                <rect key="frame" x="267" y="65" width="45" height="31"/>
+                                <rect key="frame" x="267.33333333333331" y="65" width="44.666666666666686" height="31"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="45" id="Cmn-5b-EeD"/>
                                     <constraint firstAttribute="height" constant="31" id="duQ-WD-v2f"/>
                                 </constraints>
                                 <state key="normal" title="Button"/>
@@ -48,7 +47,7 @@
                                 <rect key="frame" x="320" y="65" width="45" height="31"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="31" id="MI0-t4-C4o"/>
-                                    <constraint firstAttribute="width" constant="45" id="lEf-5z-yc8"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="45" id="lEf-5z-yc8"/>
                                 </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" image="person" catalog="system">
@@ -71,7 +70,7 @@
                                             <attributedString key="attributedTitle">
                                                 <fragment content="해안가">
                                                     <attributes>
-                                                        <font key="NSFont" size="14" name=".AppleSDGothicNeoI-Regular"/>
+                                                        <font key="NSFont" metaFont="system" size="14"/>
                                                         <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                                     </attributes>
                                                 </fragment>
@@ -83,7 +82,6 @@
                                         <rect key="frame" x="180" y="0.0" width="160" height="195"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="195" id="SII-PF-vfx"/>
-                                            <constraint firstAttribute="width" constant="160" id="dmM-CM-VX5"/>
                                         </constraints>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="filled" subtitle="서퍼 찾기 " titlePadding="7" cornerStyle="small" titleAlignment="center">
@@ -107,6 +105,7 @@
                         <constraints>
                             <constraint firstItem="8hZ-a0-QOa" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="21" id="4Sn-i9-vSt"/>
                             <constraint firstItem="A1w-JA-8Rj" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="21" id="5kH-I3-gbJ"/>
+                            <constraint firstItem="8hZ-a0-QOa" firstAttribute="leading" secondItem="9nb-xD-RVc" secondAttribute="trailing" constant="136" id="6Jf-kl-bak"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Lhz-QV-Cxe" secondAttribute="bottom" constant="200" id="Ac3-RH-NzJ"/>
                             <constraint firstItem="A1w-JA-8Rj" firstAttribute="leading" secondItem="8hZ-a0-QOa" secondAttribute="trailing" constant="8" symbolic="YES" id="BL4-j5-PdX"/>
                             <constraint firstItem="cwh-Ce-Bnp" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="25" id="J5I-xj-6qO"/>
