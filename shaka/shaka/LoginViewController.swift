@@ -22,7 +22,16 @@ class LoginViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        print(KeyChain.read(key: "accessToken") ?? "accessToken is null")
         // Do any additional setup after loading the view.
+    }
+    
+    private func moveToMain() {
+        let storyboard = UIStoryboard(name: "Main", bundle: Bundle.main)
+        let mainViewController = storyboard.instantiateViewController(identifier: "ViewController")
+        mainViewController.modalPresentationStyle = .fullScreen
+        self.present(mainViewController, animated: true)
     }
 }
 
@@ -60,20 +69,18 @@ extension LoginViewController: ASAuthorizationControllerDelegate {
                 // ...
                 authResult?.user.getIDTokenForcingRefresh(true) { idToken, error in
                     if error != nil {
-                    // Handle error
-                    return
-                  }
+                        // Handle error
+                        return
+                    }
 
-                  // Send token to your backend via HTTPS
-                  // ...
+                    // Send token to your backend via HTTPS
+                    // ...
                     print("firebase access token: \(idToken ?? "NULL")")
-                }
+                    KeyChain.create(key: "accessToken", token: idToken ?? "")
 
-                // TODO: Main 화면으로 보내기
-                // let storyboard = UIStoryboard(name: "Main", bundle: Bundle.main)
-                // let mainViewController = storyboard.instantiateViewController(identifier: "ViewController")
-                // mainViewController.modalPresentationStyle = .fullScreen
-                // self.navigationController?.show(mainViewController, sender: nil)
+                    // After save accessToken, move to Main
+                    self.moveToMain()
+                }
             }
         }
     }

@@ -46,11 +46,22 @@
                     </view>
                     <connections>
                         <outlet property="signInButton" destination="NRH-5J-UR9" id="wvS-yD-LSR"/>
+                        <segue destination="omO-i9-Mrx" kind="show" id="fef-rg-oXu"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="37.681159420289859" y="95.758928571428569"/>
+        </scene>
+        <!--Main-->
+        <scene sceneID="AzL-95-fGl">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="Main" storyboardName="Main" id="omO-i9-Mrx" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="dpX-Tw-WR1"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PHw-Ok-PCd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="683" y="96"/>
         </scene>
     </scenes>
     <resources>
