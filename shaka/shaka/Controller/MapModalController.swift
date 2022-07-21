@@ -20,10 +20,11 @@ class MapModalController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+
         //        circularImage.layer.masksToBounds = true
         //        circularImage.layer.cornerRadius = circularImage.bounds.width / 2
         backingImageView.image = backingImage
-        //카드 모달뷰 cornerRadius
+
         cardView.clipsToBounds = true
         cardView.layer.cornerRadius = 10.0
         cardView.layer.maskedCorners = [.layerMinXMinYCorner, .layerMaxXMinYCorner]
@@ -53,15 +54,10 @@ class MapModalController: UIViewController {
         hideCardAndGoBack()
     }
     
-    // ReactionViewController.swift
     private func hideCardAndGoBack() {
         
-        // ensure there's no pending layout changes before animation runs
         self.view.layoutIfNeeded()
-        
-        // set the new top constraint value for card view
-        // card view won't move down just yet, we need to call layoutIfNeeded()
-        // to tell the app to refresh the frame/position of card view
+
         if let safeAreaHeight = UIApplication.shared.keyWindow?.safeAreaLayoutGuide.layoutFrame.size.height,
            let bottomPadding = UIApplication.shared.keyWindow?.safeAreaInsets.bottom {
             
@@ -96,19 +92,14 @@ class MapModalController: UIViewController {
     }
     
     //MARK: Animations
+    
     private func showCard() {
         
-        // ensure there's no pending layout changes before animation runs
         self.view.layoutIfNeeded()
         
-        // set the new top constraint value for card view
-        // card view won't move up just yet, we need to call layoutIfNeeded()
-        // to tell the app to refresh the frame/position of card view
         if let safeAreaHeight = UIApplication.shared.keyWindow?.safeAreaLayoutGuide.layoutFrame.size.height,
            let bottomPadding = UIApplication.shared.keyWindow?.safeAreaInsets.bottom {
             
-            // when card state is normal, its top distance to safe area is
-            // (safe area height + bottom inset) / 2.0
             cardViewTopConstraint.constant = (safeAreaHeight + bottomPadding) / 2.0
         }
         
@@ -129,7 +120,6 @@ class MapModalController: UIViewController {
     }
     
     
-    
     @IBAction func reactionListButtonTapped(_ sender: UIButton) {
         guard let mapModalVC = storyboard?.instantiateViewController(withIdentifier: "MapModalController")
                 as? MapModalController else {
@@ -138,7 +128,7 @@ class MapModalController: UIViewController {
             return
         }
         
-        DispatchQueue.main.asyncAfter(deadline: .now() + 0.1 , execute: {
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.1, execute: {
             // take a snapshot of current view and set it as backingImage
             mapModalVC.backingImage = self.tabBarController?.view.asImage()
             
@@ -147,4 +137,3 @@ class MapModalController: UIViewController {
         })
     }
 }
-
