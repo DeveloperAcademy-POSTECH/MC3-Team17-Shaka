@@ -16,6 +16,11 @@
 		7547FD08287FF58500A8FA9A /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = 7547FD07287FF58500A8FA9A /* .swiftlint.yml */; };
 		7547FD0A287FF66700A8FA9A /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 7547FD09287FF66700A8FA9A /* .gitignore */; };
 		7547FD0C287FF70F00A8FA9A /* .gitattributes in Resources */ = {isa = PBXBuildFile; fileRef = 7547FD0B287FF70F00A8FA9A /* .gitattributes */; };
+		F9A7E7F02889470E00EC6031 /* KeyChain.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9A7E7EF2889470E00EC6031 /* KeyChain.swift */; };
+		F9CB689928852C8E002723F2 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F9CB689828852C8E002723F2 /* Login.storyboard */; };
+		F9CB689B288533F1002723F2 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9CB689A288533F1002723F2 /* LoginViewController.swift */; };
+		F9CB689F28854DD7002723F2 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = F9CB689E28854DD7002723F2 /* FirebaseAuth */; };
+		F9CB68A1288550DC002723F2 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F9CB68A0288550DC002723F2 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +35,11 @@
 		7547FD07287FF58500A8FA9A /* .swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
 		7547FD09287FF66700A8FA9A /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		7547FD0B287FF70F00A8FA9A /* .gitattributes */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitattributes; sourceTree = "<group>"; };
+		F9A7E7EF2889470E00EC6031 /* KeyChain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyChain.swift; sourceTree = "<group>"; };
+		F9CB689828852C8E002723F2 /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
+		F9CB689A288533F1002723F2 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		F9CB689C2885386E002723F2 /* shaka.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = shaka.entitlements; sourceTree = "<group>"; };
+		F9CB68A0288550DC002723F2 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +47,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F9CB689F28854DD7002723F2 /* FirebaseAuth in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -64,13 +75,18 @@
 		7547FCEC287FECA700A8FA9A /* shaka */ = {
 			isa = PBXGroup;
 			children = (
+				F9CB689C2885386E002723F2 /* shaka.entitlements */,
 				7547FCED287FECA700A8FA9A /* AppDelegate.swift */,
 				7547FCEF287FECA700A8FA9A /* SceneDelegate.swift */,
 				7547FCF1287FECA700A8FA9A /* ViewController.swift */,
 				7547FCF3287FECA700A8FA9A /* Main.storyboard */,
+				F9A7E7EF2889470E00EC6031 /* KeyChain.swift */,
+				F9CB689A288533F1002723F2 /* LoginViewController.swift */,
+				F9CB689828852C8E002723F2 /* Login.storyboard */,
 				7547FCF6287FECA800A8FA9A /* Assets.xcassets */,
 				7547FCF8287FECA800A8FA9A /* LaunchScreen.storyboard */,
 				7547FCFB287FECA800A8FA9A /* Info.plist */,
+				F9CB68A0288550DC002723F2 /* GoogleService-Info.plist */,
 				7547FD07287FF58500A8FA9A /* .swiftlint.yml */,
 			);
 			path = shaka;
@@ -94,6 +110,7 @@
 			);
 			name = shaka;
 			packageProductDependencies = (
+				F9CB689E28854DD7002723F2 /* FirebaseAuth */,
 			);
 			productName = shaka;
 			productReference = 7547FCEA287FECA700A8FA9A /* shaka.app */;
@@ -124,6 +141,7 @@
 			);
 			mainGroup = 7547FCE1287FECA700A8FA9A;
 			packageReferences = (
+				F9CB689D28854DD7002723F2 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
 			);
 			productRefGroup = 7547FCEB287FECA700A8FA9A /* Products */;
 			projectDirPath = "";
@@ -140,7 +158,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				7547FD0A287FF66700A8FA9A /* .gitignore in Resources */,
+				F9CB68A1288550DC002723F2 /* GoogleService-Info.plist in Resources */,
 				7547FD0C287FF70F00A8FA9A /* .gitattributes in Resources */,
+				F9CB689928852C8E002723F2 /* Login.storyboard in Resources */,
 				7547FD08287FF58500A8FA9A /* .swiftlint.yml in Resources */,
 				7547FCFA287FECA800A8FA9A /* LaunchScreen.storyboard in Resources */,
 				7547FCF7287FECA800A8FA9A /* Assets.xcassets in Resources */,
@@ -175,7 +195,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F9CB689B288533F1002723F2 /* LoginViewController.swift in Sources */,
 				7547FCF2287FECA700A8FA9A /* ViewController.swift in Sources */,
+				F9A7E7F02889470E00EC6031 /* KeyChain.swift in Sources */,
 				7547FCEE287FECA700A8FA9A /* AppDelegate.swift in Sources */,
 				7547FCF0287FECA700A8FA9A /* SceneDelegate.swift in Sources */,
 			);
@@ -322,7 +344,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_ENTITLEMENTS = shaka/shaka.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 5MNSFLP2V9;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -332,6 +356,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -339,6 +364,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.i3e2.shaka;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = ShakaApp;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -350,7 +376,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_ENTITLEMENTS = shaka/shaka.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 5MNSFLP2V9;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -360,6 +388,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -367,6 +396,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.i3e2.shaka;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = ShakaApp;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -395,6 +425,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		F9CB689D28854DD7002723F2 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 9.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		F9CB689E28854DD7002723F2 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F9CB689D28854DD7002723F2 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 7547FCE2287FECA700A8FA9A /* Project object */;
 }
