@@ -54,6 +54,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		75095774288E8DAD00A82F64 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				7547FCF3287FECA700A8FA9A /* Main.storyboard */,
+				F9CB689828852C8E002723F2 /* Login.storyboard */,
+				7547FCF8287FECA800A8FA9A /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		75095775288E8DE300A82F64 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				7547FCF1287FECA700A8FA9A /* ViewController.swift */,
+				F9CB689A288533F1002723F2 /* LoginViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
 		7547FCE1287FECA700A8FA9A = {
 			isa = PBXGroup;
 			children = (
@@ -75,16 +94,13 @@
 		7547FCEC287FECA700A8FA9A /* shaka */ = {
 			isa = PBXGroup;
 			children = (
+				75095774288E8DAD00A82F64 /* View */,
+				75095775288E8DE300A82F64 /* Controller */,
 				F9CB689C2885386E002723F2 /* shaka.entitlements */,
 				7547FCED287FECA700A8FA9A /* AppDelegate.swift */,
 				7547FCEF287FECA700A8FA9A /* SceneDelegate.swift */,
-				7547FCF1287FECA700A8FA9A /* ViewController.swift */,
-				7547FCF3287FECA700A8FA9A /* Main.storyboard */,
 				F9A7E7EF2889470E00EC6031 /* KeyChain.swift */,
-				F9CB689A288533F1002723F2 /* LoginViewController.swift */,
-				F9CB689828852C8E002723F2 /* Login.storyboard */,
 				7547FCF6287FECA800A8FA9A /* Assets.xcassets */,
-				7547FCF8287FECA800A8FA9A /* LaunchScreen.storyboard */,
 				7547FCFB287FECA800A8FA9A /* Info.plist */,
 				F9CB68A0288550DC002723F2 /* GoogleService-Info.plist */,
 				7547FD07287FF58500A8FA9A /* .swiftlint.yml */,
