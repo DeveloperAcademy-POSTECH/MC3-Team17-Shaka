@@ -46,7 +46,7 @@
                     </view>
                     <connections>
                         <outlet property="signInButton" destination="NRH-5J-UR9" id="wvS-yD-LSR"/>
-                        <segue destination="omO-i9-Mrx" kind="show" id="fef-rg-oXu"/>
+                        <segue destination="omO-i9-Mrx" kind="show" identifier="PushToMainSegue" id="fef-rg-oXu"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
