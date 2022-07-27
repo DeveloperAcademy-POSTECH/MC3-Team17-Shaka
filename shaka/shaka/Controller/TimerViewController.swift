@@ -26,23 +26,23 @@ class TimerViewController: UIViewController {
     }
     
     @IBAction func startPauseAction(_ sender: UIButton) {
-        if let buttonName = sender.currentTitle {
-            if buttonName == "start" {
-                timerStart()
-                startButtonLabel.setTitle("pause", for: .normal)
-                startButtonLabel.backgroundColor = .gray
-            }else {
-                totalTimer.invalidate()
-                startButtonLabel.setTitle("start", for: .normal)
-                startButtonLabel.backgroundColor = .green
-            }
+        print(sender.currentTitle)
+        if sender.currentTitle == "시작" {
+            startButtonLabel.setTitle("일시정지", for: .normal)
+            startButtonLabel.backgroundColor = .gray
+            totalTimer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(timerCount), userInfo: nil, repeats: true)
+        }else {
+            totalTimer.invalidate()
+            startButtonLabel.setTitle("시작", for: .normal)
+            startButtonLabel.backgroundColor = UIColor(named: "StartButtonColor")
         }
+        
     }
     
     @IBAction func stopAction(_ sender: UIButton) {
-        if startButtonLabel.currentTitle == "pause" {
-            startButtonLabel.setTitle("start", for: .normal)
-            startButtonLabel.backgroundColor = .green
+        if startButtonLabel.currentTitle == "일시정지" {
+            startButtonLabel.setTitle("시작", for: .normal)
+            startButtonLabel.backgroundColor = UIColor(named: "StartButtonColor")
         }
         totalTimer.invalidate()
         totalTimeLabel.text = "00 : 00 : 00"
@@ -51,10 +51,6 @@ class TimerViewController: UIViewController {
         timeResult = timeString
         totalCount = 0
         print(timeResult)
-    }
-    
-    func timerStart() {
-        totalTimer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(timerCount), userInfo: nil, repeats: true)
     }
     
     @objc func timerCount() {
