@@ -16,6 +16,7 @@
 		7547FD08287FF58500A8FA9A /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = 7547FD07287FF58500A8FA9A /* .swiftlint.yml */; };
 		7547FD0A287FF66700A8FA9A /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 7547FD09287FF66700A8FA9A /* .gitignore */; };
 		7547FD0C287FF70F00A8FA9A /* .gitattributes in Resources */ = {isa = PBXBuildFile; fileRef = 7547FD0B287FF70F00A8FA9A /* .gitattributes */; };
+		75C0EA3228910BD700A0C213 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75C0EA3128910BD700A0C213 /* WebViewController.swift */; };
 		F9A7E7F02889470E00EC6031 /* KeyChain.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9A7E7EF2889470E00EC6031 /* KeyChain.swift */; };
 		F9CB689928852C8E002723F2 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F9CB689828852C8E002723F2 /* Login.storyboard */; };
 		F9CB689B288533F1002723F2 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9CB689A288533F1002723F2 /* LoginViewController.swift */; };
@@ -35,6 +36,7 @@
 		7547FD07287FF58500A8FA9A /* .swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
 		7547FD09287FF66700A8FA9A /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		7547FD0B287FF70F00A8FA9A /* .gitattributes */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitattributes; sourceTree = "<group>"; };
+		75C0EA3128910BD700A0C213 /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
 		F9A7E7EF2889470E00EC6031 /* KeyChain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyChain.swift; sourceTree = "<group>"; };
 		F9CB689828852C8E002723F2 /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
 		F9CB689A288533F1002723F2 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -68,6 +70,7 @@
 			isa = PBXGroup;
 			children = (
 				7547FCF1287FECA700A8FA9A /* ViewController.swift */,
+				75C0EA3128910BD700A0C213 /* WebViewController.swift */,
 				F9CB689A288533F1002723F2 /* LoginViewController.swift */,
 			);
 			path = Controller;
@@ -212,6 +215,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F9CB689B288533F1002723F2 /* LoginViewController.swift in Sources */,
+				75C0EA3228910BD700A0C213 /* WebViewController.swift in Sources */,
 				7547FCF2287FECA700A8FA9A /* ViewController.swift in Sources */,
 				F9A7E7F02889470E00EC6031 /* KeyChain.swift in Sources */,
 				7547FCEE287FECA700A8FA9A /* AppDelegate.swift in Sources */,

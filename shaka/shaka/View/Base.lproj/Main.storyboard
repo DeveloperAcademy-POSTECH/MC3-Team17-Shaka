@@ -3,6 +3,7 @@
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -15,18 +16,118 @@
                     <view key="view" contentMode="scaleToFill" restorationIdentifier="ViewController" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="XqD-ik-1FY">
+                                <rect key="frame" x="20" y="44" width="374" height="778"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hzn-f1-5PU" userLabel="NavView">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="46"/>
+                                        <color key="backgroundColor" name="CardBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="46" id="wKg-oN-iVM"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jqH-uo-K0J" userLabel="TitleView">
+                                        <rect key="frame" x="0.0" y="77.5" width="374" height="29"/>
+                                        <color key="backgroundColor" name="CardBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="29" id="tGc-CD-uB4"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8ZF-gP-of2" userLabel="PersonalView">
+                                        <rect key="frame" x="0.0" y="138" width="374" height="134"/>
+                                        <color key="backgroundColor" name="CardBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="134" id="D2U-kd-FtJ"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hj9-JB-rcK" userLabel="SurfView">
+                                        <rect key="frame" x="0.0" y="304" width="374" height="190"/>
+                                        <color key="backgroundColor" systemColor="systemBlueColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="190" id="UjC-dR-dpj"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xM9-2H-bXZ" userLabel="WebSheetView">
+                                        <rect key="frame" x="0.0" y="525.5" width="374" height="123"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="oxa-U6-j8G">
+                                                <rect key="frame" x="11.5" y="0.0" width="351" height="123"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5j4-02-Qlk">
+                                                        <rect key="frame" x="0.0" y="0.0" width="168" height="123"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="123" id="8Hh-VW-0Zg"/>
+                                                            <constraint firstAttribute="width" constant="168" id="PNk-Dz-Ptr"/>
+                                                        </constraints>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="filled" title="입수 신고"/>
+                                                        <connections>
+                                                            <action selector="getWaterTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="y8H-ct-XKE"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s67-Cg-1BR">
+                                                        <rect key="frame" x="183" y="0.0" width="168" height="123"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="123" id="LvI-Az-fDq"/>
+                                                            <constraint firstAttribute="width" constant="168" id="p3H-Ax-hkv"/>
+                                                        </constraints>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="filled" title="퇴수 신고"/>
+                                                        <connections>
+                                                            <action selector="offWaterTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="g82-ZU-q2c"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemGreenColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="123" id="1V4-4V-Ybk"/>
+                                            <constraint firstItem="oxa-U6-j8G" firstAttribute="centerY" secondItem="xM9-2H-bXZ" secondAttribute="centerY" id="7j7-ph-TzD"/>
+                                            <constraint firstItem="oxa-U6-j8G" firstAttribute="centerX" secondItem="xM9-2H-bXZ" secondAttribute="centerX" id="Fyz-UF-SH3"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Lmb-dw-pTc" userLabel="BottomView">
+                                        <rect key="frame" x="0.0" y="680" width="374" height="98"/>
+                                        <color key="backgroundColor" name="YellowScale"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="98" id="aRG-CY-uSH"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                            </stackView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="XqD-ik-1FY" secondAttribute="trailing" constant="20" id="HQp-Xp-QLd"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="XqD-ik-1FY" secondAttribute="bottom" constant="40" id="Yma-nK-JFd"/>
+                            <constraint firstItem="XqD-ik-1FY" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="dTo-x8-cFI"/>
+                            <constraint firstItem="XqD-ik-1FY" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="pov-ff-G3v"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="20" y="96"/>
+            <point key="canvasLocation" x="18.840579710144929" y="95.758928571428569"/>
         </scene>
     </scenes>
     <resources>
+        <namedColor name="CardBackgroundColor">
+            <color red="0.93699997663497925" green="0.94499999284744263" blue="0.97299998998641968" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="YellowScale">
+            <color red="0.97299998998641968" green="0.78799998760223389" blue="0.36500000953674316" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBlueColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
