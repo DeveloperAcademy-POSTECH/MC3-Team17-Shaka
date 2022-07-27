@@ -18,7 +18,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="tTG-Vo-OD0">
-                                <rect key="frame" x="20" y="114" width="323" height="59"/>
+                                <rect key="frame" x="20" y="74" width="323" height="59"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="안전하게 서핑하세요" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b23-m6-da9">
                                         <rect key="frame" x="0.0" y="10.333333333333329" width="256" height="38.333333333333336"/>
@@ -35,28 +35,28 @@
                                 </subviews>
                             </stackView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="포항 월포해변" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CFp-iC-8Nr">
-                                <rect key="frame" x="20" y="194" width="130" height="28.666666666666657"/>
+                                <rect key="frame" x="20" y="154" width="130" height="28.666666666666657"/>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="24"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="d2U-dM-DIc">
-                                <rect key="frame" x="34" y="263.66666666666669" width="323" height="323.00000000000006"/>
+                                <rect key="frame" x="34" y="223.66666666666663" width="323" height="323"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00 : 00 : 00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5mK-ax-iwo">
-                                        <rect key="frame" x="34" y="108.99999999999999" width="255" height="62.333333333333329"/>
+                                        <rect key="frame" x="34" y="109.00000000000001" width="255" height="62.333333333333329"/>
                                         <fontDescription key="fontDescription" type="system" weight="light" pointSize="52"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="스탠딩 시간" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zZj-q6-cuB">
-                                        <rect key="frame" x="122" y="192.33333333333331" width="78" height="20.333333333333343"/>
+                                        <rect key="frame" x="122" y="192.33333333333334" width="78" height="20.333333333333343"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00 : 00 : 00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y9v-tu-klx">
-                                        <rect key="frame" x="99.333333333333343" y="213.66666666666663" width="123.66666666666666" height="28.666666666666657"/>
+                                        <rect key="frame" x="99.333333333333343" y="213.66666666666666" width="123.66666666666666" height="28.666666666666657"/>
                                         <fontDescription key="fontDescription" type="system" weight="medium" pointSize="24"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
@@ -77,7 +77,7 @@
                                 </constraints>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="13k-CL-6za">
-                                <rect key="frame" x="20" y="690.66666666666663" width="160" height="70"/>
+                                <rect key="frame" x="20" y="650.66666666666663" width="160" height="70"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="70" id="3gO-c7-Jd2"/>
                                     <constraint firstAttribute="width" constant="160" id="xDw-Hh-Pe5"/>
@@ -96,9 +96,12 @@
                                     <fontDescription key="titleFontDescription" type="boldSystem" pointSize="24"/>
                                     <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="stopAction:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="vT4-Gt-xdz"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Leg-WY-5SS">
-                                <rect key="frame" x="210" y="690.66666666666663" width="160" height="70"/>
+                                <rect key="frame" x="210" y="650.66666666666663" width="160" height="70"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="70" id="1Yz-pQ-jrf"/>
                                     <constraint firstAttribute="width" constant="160" id="Lbb-yr-b9w"/>
@@ -111,13 +114,16 @@
                                     <fontDescription key="titleFontDescription" type="boldSystem" pointSize="24"/>
                                     <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="startPauseAction:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="F9r-Io-KIu"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="d2U-dM-DIc" firstAttribute="top" secondItem="CFp-iC-8Nr" secondAttribute="bottom" constant="41" id="2dv-r2-giQ"/>
-                            <constraint firstItem="tTG-Vo-OD0" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="70" id="4Xn-XH-cwf"/>
+                            <constraint firstItem="tTG-Vo-OD0" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="30" id="4Xn-XH-cwf"/>
                             <constraint firstItem="d2U-dM-DIc" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="34" id="6Y6-2Q-i8e"/>
                             <constraint firstItem="Leg-WY-5SS" firstAttribute="top" secondItem="d2U-dM-DIc" secondAttribute="bottom" constant="104" id="BnU-ys-J4b"/>
                             <constraint firstItem="tTG-Vo-OD0" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="I0t-U8-jbE"/>
@@ -130,7 +136,10 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="standingTimeLabel" destination="y9v-tu-klx" id="sfQ-WY-xyb"/>
+                        <outlet property="startButtonLabel" destination="Leg-WY-5SS" id="gNU-IZ-jp4"/>
                         <outlet property="timeCircle" destination="d2U-dM-DIc" id="BsL-xP-bBq"/>
+                        <outlet property="totalTimeLabel" destination="5mK-ax-iwo" id="VI1-Hq-X8x"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
