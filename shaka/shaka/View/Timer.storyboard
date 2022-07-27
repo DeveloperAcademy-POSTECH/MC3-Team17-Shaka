@@ -76,8 +76,9 @@
                                     <constraint firstAttribute="trailing" secondItem="5mK-ax-iwo" secondAttribute="trailing" constant="34" id="zOJ-Uo-QBJ"/>
                                 </constraints>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="13k-CL-6za">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="13k-CL-6za" customClass="TimerButton" customModule="shaka" customModuleProvider="target">
                                 <rect key="frame" x="20" y="650.66666666666663" width="160" height="70"/>
+                                <color key="backgroundColor" name="StopButtonColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="70" id="3gO-c7-Jd2"/>
                                     <constraint firstAttribute="width" constant="160" id="xDw-Hh-Pe5"/>
@@ -88,33 +89,23 @@
                                 <state key="normal" title="종료">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
-                                <buttonConfiguration key="configuration" style="plain" title="종료" cornerStyle="medium">
-                                    <backgroundConfiguration key="background">
-                                        <color key="backgroundColor" name="StopButtonColor"/>
-                                        <color key="strokeColor" systemColor="secondarySystemGroupedBackgroundColor"/>
-                                    </backgroundConfiguration>
-                                    <fontDescription key="titleFontDescription" type="boldSystem" pointSize="24"/>
-                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </buttonConfiguration>
                                 <connections>
                                     <action selector="stopAction:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="vT4-Gt-xdz"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Leg-WY-5SS">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Leg-WY-5SS" customClass="TimerButton" customModule="shaka" customModuleProvider="target">
                                 <rect key="frame" x="210" y="650.66666666666663" width="160" height="70"/>
+                                <color key="backgroundColor" name="StartButtonColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="70" id="1Yz-pQ-jrf"/>
                                     <constraint firstAttribute="width" constant="160" id="Lbb-yr-b9w"/>
                                 </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="시작" cornerStyle="medium">
-                                    <backgroundConfiguration key="background">
-                                        <color key="backgroundColor" name="StartButtonColor"/>
-                                    </backgroundConfiguration>
-                                    <fontDescription key="titleFontDescription" type="boldSystem" pointSize="24"/>
-                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </buttonConfiguration>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="시작">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
                                 <connections>
                                     <action selector="startPauseAction:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="F9r-Io-KIu"/>
                                 </connections>
@@ -155,9 +146,6 @@
         <namedColor name="StopButtonColor">
             <color red="0.98431372549019602" green="0.5490196078431373" blue="0.5490196078431373" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
-        <systemColor name="secondarySystemGroupedBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

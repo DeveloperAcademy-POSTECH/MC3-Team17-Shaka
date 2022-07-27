@@ -8,7 +8,6 @@
 import UIKit
 
 class TimerButton: UIButton {
-    var buttonStart = false
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -21,11 +20,7 @@ class TimerButton: UIButton {
     }
     
     func setConfig() {
-        backgroundColor = UIColor(named: "StartButtonColor")
         setTitleColor(.white, for: .normal)
-        
-//        layer.borderColor = UIColor.black.cgColor
-//        layer.borderWidth = 1
         
         layer.cornerRadius = 10
     }
@@ -46,12 +41,6 @@ class TimerButton: UIButton {
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         super.touchesBegan(touches, with: event)
-        if !buttonStart {
-            touchIn()
-            buttonStart.toggle()
-        }else {
-            touchOut()
-            buttonStart.toggle()
-        }
+        touchIn()
     }
 }

@@ -63,7 +63,7 @@ class TimerViewController: UIViewController {
     func secondsToMinutes(seconds: Int) -> [Int] {
         var timeArray = [Int]()
         timeArray.append(seconds / 3600)
-        timeArray.append(seconds % 3600)
+        timeArray.append((seconds % 3600) / 60)
         timeArray.append((seconds % 3600) % 60)
         return timeArray
     }
