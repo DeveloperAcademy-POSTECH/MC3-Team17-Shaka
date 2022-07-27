@@ -9,21 +9,17 @@ import UIKit
 
 class TimerViewController: UIViewController {
 
+    @IBOutlet weak var timeCircle: UIView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        makeCircle()
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    func makeCircle() {
+        timeCircle.layer.cornerRadius = timeCircle.layer.bounds.width / 2
+        timeCircle.clipsToBounds = true
+        timeCircle.layer.borderWidth = 15
+        timeCircle.layer.borderColor = UIColor.gray.cgColor
     }
-    */
-
 }
