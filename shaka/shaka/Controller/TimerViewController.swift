@@ -26,12 +26,11 @@ class TimerViewController: UIViewController {
     }
     
     @IBAction func startPauseAction(_ sender: UIButton) {
-        print(sender.currentTitle)
         if sender.currentTitle == "시작" {
             startButtonLabel.setTitle("일시정지", for: .normal)
             startButtonLabel.backgroundColor = .gray
             totalTimer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(timerCount), userInfo: nil, repeats: true)
-        }else {
+        } else {
             totalTimer.invalidate()
             startButtonLabel.setTitle("시작", for: .normal)
             startButtonLabel.backgroundColor = UIColor(named: "StartButtonColor")

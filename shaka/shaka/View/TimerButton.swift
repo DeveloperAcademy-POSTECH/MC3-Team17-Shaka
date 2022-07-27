@@ -32,8 +32,7 @@ class TimerButton: UIButton {
     func touchOut() {
         UIView.animate(withDuration: 0.1, delay: 0, options: [.allowUserInteraction, .curveEaseOut], animations: { self.transform = .identity }, completion: nil)
     }
-    
-    
+      
     override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
         super.touchesEnded(touches, with: event)
         touchOut()

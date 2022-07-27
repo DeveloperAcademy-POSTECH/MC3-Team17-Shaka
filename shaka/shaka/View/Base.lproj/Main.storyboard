@@ -24,16 +24,6 @@
             </objects>
             <point key="canvasLocation" x="928.98550724637687" y="95.758928571428569"/>
         </scene>
-        <!--Timer-->
-        <scene sceneID="dZv-yi-GAD">
-            <objects>
-                <viewControllerPlaceholder storyboardName="Timer" id="YJh-s5-JXC" sceneMemberID="viewController">
-                    <navigationItem key="navigationItem" id="VcY-eZ-xIU"/>
-                </viewControllerPlaceholder>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="4MI-ug-6XK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1597.8260869565217" y="121.875"/>
-        </scene>
     </scenes>
     <resources>
         <systemColor name="systemBackgroundColor">
