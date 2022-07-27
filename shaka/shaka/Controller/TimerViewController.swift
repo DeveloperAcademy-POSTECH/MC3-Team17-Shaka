@@ -93,6 +93,6 @@ class TimerViewController: UIViewController {
         timeCircle.layer.cornerRadius = timeCircle.layer.bounds.width / 2
         timeCircle.clipsToBounds = true
         timeCircle.layer.borderWidth = 15
-        timeCircle.layer.borderColor = UIColor.gray.cgColor
+        timeCircle.layer.borderColor = UIColor.systemGray6.cgColor
     }
 }
