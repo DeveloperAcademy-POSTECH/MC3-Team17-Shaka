@@ -24,7 +24,7 @@ class TimerViewController: UIViewController {
         super.viewDidLoad()
         makeCircle()
     }
-    
+    // 타이머 시작, 일시정지 버튼
     @IBAction func startPauseAction(_ sender: UIButton) {
         if sender.currentTitle == "시작" {
             startButtonLabel.setTitle("일시정지", for: .normal)
@@ -37,8 +37,9 @@ class TimerViewController: UIViewController {
         }
         
     }
-    
+    // 정지 버튼
     @IBAction func stopAction(_ sender: UIButton) {
+        // 타이머가 돌아가고 있는 상태에서 정지를 누를 시 일시정지 표시를 시작으로 변경
         if startButtonLabel.currentTitle == "일시정지" {
             startButtonLabel.setTitle("시작", for: .normal)
             startButtonLabel.backgroundColor = UIColor(named: "StartButtonColor")
@@ -51,14 +52,14 @@ class TimerViewController: UIViewController {
         totalCount = 0
         print(timeResult)
     }
-    
+    // 타이머 카운트
     @objc func timerCount() {
         totalCount += 1
         let time = secondsToMinutes(seconds: totalCount)
         let timeString = makeTimeLabelString(hours: time[0], minutes: time[1], seconds: time[2])
         totalTimeLabel.text = timeString
     }
-    
+    // 타이머 시, 분, 초 계산
     func secondsToMinutes(seconds: Int) -> [Int] {
         var timeArray = [Int]()
         timeArray.append(seconds / 3600)
@@ -66,7 +67,7 @@ class TimerViewController: UIViewController {
         timeArray.append((seconds % 3600) % 60)
         return timeArray
     }
-    
+    // 타이머 라벨에 들어갈 문자열로 변환
     func makeTimeLabelString(hours: Int, minutes: Int, seconds: Int) -> String {
         var timeString = ""
         timeString += String(format: "%02d", hours)
@@ -76,7 +77,7 @@ class TimerViewController: UIViewController {
         timeString += String(format: "%02d", seconds)
         return timeString
     }
-    
+    // 타이머 로그에 들어갈 문자열로 변환
     func makeTimeToText(hours: Int, minutes: Int, seconds: Int) -> String {
         var timeString = ""
         timeString += String(format: "%02d", hours)
@@ -87,7 +88,7 @@ class TimerViewController: UIViewController {
         timeString += "초 "
         return timeString
     }
-    
+    // 원 생성
     func makeCircle() {
         timeCircle.layer.cornerRadius = timeCircle.layer.bounds.width / 2
         timeCircle.clipsToBounds = true
