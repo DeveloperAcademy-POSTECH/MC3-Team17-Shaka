@@ -8,9 +8,22 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
+    @IBOutlet weak var getWaterButton: UIButton!
+    @IBOutlet weak var surfImage: UIImageView!
+    @IBOutlet weak var cardBackground: UIView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        getWaterButton.layer.shadowColor = UIColor.gray.cgColor
+        surfImage.layer.cornerRadius = 10
+        surfImage.layer.shadowOffset = CGSize(width: 5, height: 5)
+        surfImage.layer.shadowOpacity = 0.7
+        surfImage.layer.shadowRadius = 5
+        surfImage.layer.shadowColor = UIColor.gray.cgColor
+        
+        cardBackground.layer.cornerRadius = 10
     }
 
     @IBAction func getWaterTapped(_ sender: Any) {
@@ -26,7 +39,7 @@ class ViewController: UIViewController {
         guard let url = URL(string: "https://boat.kcg.go.kr/home/common/cert_info.do") else {
             return
         }
-        let webVC = WebViewController(url: url, title: "퇴수 신고")
+        let webVC = WebViewController(url: url, title: "입수 신고")
         let navVC = UINavigationController(rootViewController: webVC)
         present(navVC, animated: true)
     }
