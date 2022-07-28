@@ -16,11 +16,12 @@
 		7547FD08287FF58500A8FA9A /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = 7547FD07287FF58500A8FA9A /* .swiftlint.yml */; };
 		7547FD0A287FF66700A8FA9A /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 7547FD09287FF66700A8FA9A /* .gitignore */; };
 		7547FD0C287FF70F00A8FA9A /* .gitattributes in Resources */ = {isa = PBXBuildFile; fileRef = 7547FD0B287FF70F00A8FA9A /* .gitattributes */; };
+		75C0EA3228910BD700A0C213 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75C0EA3128910BD700A0C213 /* WebViewController.swift */; };
 		F940EE40288FB2A70090F733 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = F940EE3F288FB2A70090F733 /* FirebaseAuth */; };
 		F940EE42288FB7A50090F733 /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F940EE41288FB7A50090F733 /* SignupViewController.swift */; };
 		F940EE452891076D0090F733 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = F940EE442891076D0090F733 /* User.swift */; };
 		F940EE47289107DB0090F733 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = F940EE46289107DB0090F733 /* APIClient.swift */; };
-		75C0EA3228910BD700A0C213 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75C0EA3128910BD700A0C213 /* WebViewController.swift */; };
+		F940EE4A2892B2A30090F733 /* FirebaseMessaging in Frameworks */ = {isa = PBXBuildFile; productRef = F940EE492892B2A30090F733 /* FirebaseMessaging */; };
 		F9A7E7F02889470E00EC6031 /* KeyChain.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9A7E7EF2889470E00EC6031 /* KeyChain.swift */; };
 		F9CB689928852C8E002723F2 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F9CB689828852C8E002723F2 /* Login.storyboard */; };
 		F9CB689B288533F1002723F2 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9CB689A288533F1002723F2 /* LoginViewController.swift */; };
@@ -39,10 +40,10 @@
 		7547FD07287FF58500A8FA9A /* .swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
 		7547FD09287FF66700A8FA9A /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		7547FD0B287FF70F00A8FA9A /* .gitattributes */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitattributes; sourceTree = "<group>"; };
+		75C0EA3128910BD700A0C213 /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
 		F940EE41288FB7A50090F733 /* SignupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
 		F940EE442891076D0090F733 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		F940EE46289107DB0090F733 /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
-		75C0EA3128910BD700A0C213 /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
 		F9A7E7EF2889470E00EC6031 /* KeyChain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyChain.swift; sourceTree = "<group>"; };
 		F9CB689828852C8E002723F2 /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
 		F9CB689A288533F1002723F2 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -55,6 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F940EE4A2892B2A30090F733 /* FirebaseMessaging in Frameworks */,
 				F940EE40288FB2A70090F733 /* FirebaseAuth in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -147,6 +149,7 @@
 			name = shaka;
 			packageProductDependencies = (
 				F940EE3F288FB2A70090F733 /* FirebaseAuth */,
+				F940EE492892B2A30090F733 /* FirebaseMessaging */,
 			);
 			productName = shaka;
 			productReference = 7547FCEA287FECA700A8FA9A /* shaka.app */;
@@ -178,6 +181,7 @@
 			mainGroup = 7547FCE1287FECA700A8FA9A;
 			packageReferences = (
 				F940EE3E288FB2A70090F733 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				F940EE482892B2A30090F733 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
 			);
 			productRefGroup = 7547FCEB287FECA700A8FA9A /* Products */;
 			projectDirPath = "";
@@ -475,6 +479,14 @@
 				kind = branch;
 			};
 		};
+		F940EE482892B2A30090F733 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -482,6 +494,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = F940EE3E288FB2A70090F733 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
 			productName = FirebaseAuth;
+		};
+		F940EE492892B2A30090F733 /* FirebaseMessaging */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F940EE3E288FB2A70090F733 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseMessaging;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
