@@ -25,7 +25,7 @@
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="32"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="IVG-53-D5v">
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Surf" translatesAutoresizingMaskIntoConstraints="NO" id="IVG-53-D5v">
                                         <rect key="frame" x="264" y="0.0" width="59" height="59"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="59" id="bWY-uf-V19"/>
@@ -140,6 +140,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Surf" width="109.5" height="108.5"/>
         <namedColor name="StartButtonColor">
             <color red="0.40392156862745099" green="0.81176470588235294" blue="0.49411764705882355" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
