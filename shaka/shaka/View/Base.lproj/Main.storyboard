@@ -28,20 +28,25 @@
                                                 <rect key="frame" x="0.0" y="0.0" width="374" height="46"/>
                                                 <subviews>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SubLogo" translatesAutoresizingMaskIntoConstraints="NO" id="SDb-Ka-l06">
-                                                        <rect key="frame" x="0.0" y="0.0" width="129" height="46"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="105" height="46"/>
                                                     </imageView>
-                                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="FrG-s8-GWG">
-                                                        <rect key="frame" x="320" y="0.0" width="54" height="46"/>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FrG-s8-GWG">
+                                                        <rect key="frame" x="296" y="0.0" width="78" height="46"/>
                                                         <subviews>
-                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="CloudIcon" translatesAutoresizingMaskIntoConstraints="NO" id="NPD-sw-e8d">
-                                                                <rect key="frame" x="0.0" y="0.0" width="20" height="46"/>
-                                                            </imageView>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lub-Zd-c0C">
+                                                                <rect key="frame" x="0.0" y="0.0" width="59" height="46"/>
+                                                                <state key="normal" title="Button"/>
+                                                                <buttonConfiguration key="configuration" style="plain" image="CloudIcon"/>
+                                                                <connections>
+                                                                    <segue destination="b7k-Z4-qbk" kind="show" id="hAj-ay-gZ4"/>
+                                                                </connections>
+                                                            </button>
                                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="DoorIcon" translatesAutoresizingMaskIntoConstraints="NO" id="eBu-e0-2af">
-                                                                <rect key="frame" x="35" y="0.0" width="19" height="46"/>
+                                                                <rect key="frame" x="59" y="0.0" width="19" height="46"/>
                                                             </imageView>
                                                         </subviews>
                                                         <constraints>
-                                                            <constraint firstAttribute="width" constant="54" id="hgo-yv-uD3"/>
+                                                            <constraint firstAttribute="width" constant="78" id="7fU-F4-Xjn"/>
                                                         </constraints>
                                                     </stackView>
                                                 </subviews>
@@ -374,6 +379,16 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="18.840579710144929" y="95.758928571428569"/>
+        </scene>
+        <!--WeatherNotificationViewController-->
+        <scene sceneID="NmD-dA-3SH">
+            <objects>
+                <viewControllerPlaceholder storyboardName="WeatherNotification" referencedIdentifier="WeatherNotificationViewController" id="b7k-Z4-qbk" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="lgU-mc-zLU"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="I6c-JA-na4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="664" y="-121"/>
         </scene>
     </scenes>
     <resources>
