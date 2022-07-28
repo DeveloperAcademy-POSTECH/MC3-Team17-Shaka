@@ -19,10 +19,14 @@
 		790F255F2891315B00054B54 /* Timer.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 790F255E2891315B00054B54 /* Timer.storyboard */; };
 		790F25612891317A00054B54 /* TimerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 790F25602891317A00054B54 /* TimerViewController.swift */; };
 		7928591F28919D1E0054683A /* TimerButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7928591E28919D1E0054683A /* TimerButton.swift */; };
+		F940EE40288FB2A70090F733 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = F940EE3F288FB2A70090F733 /* FirebaseAuth */; };
+		F940EE42288FB7A50090F733 /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F940EE41288FB7A50090F733 /* SignupViewController.swift */; };
+		F940EE452891076D0090F733 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = F940EE442891076D0090F733 /* User.swift */; };
+		F940EE47289107DB0090F733 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = F940EE46289107DB0090F733 /* APIClient.swift */; };
+		75C0EA3228910BD700A0C213 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75C0EA3128910BD700A0C213 /* WebViewController.swift */; };
 		F9A7E7F02889470E00EC6031 /* KeyChain.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9A7E7EF2889470E00EC6031 /* KeyChain.swift */; };
 		F9CB689928852C8E002723F2 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F9CB689828852C8E002723F2 /* Login.storyboard */; };
 		F9CB689B288533F1002723F2 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9CB689A288533F1002723F2 /* LoginViewController.swift */; };
-		F9CB689F28854DD7002723F2 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = F9CB689E28854DD7002723F2 /* FirebaseAuth */; };
 		F9CB68A1288550DC002723F2 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F9CB68A0288550DC002723F2 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
@@ -41,6 +45,10 @@
 		790F255E2891315B00054B54 /* Timer.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Timer.storyboard; sourceTree = "<group>"; };
 		790F25602891317A00054B54 /* TimerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerViewController.swift; sourceTree = "<group>"; };
 		7928591E28919D1E0054683A /* TimerButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerButton.swift; sourceTree = "<group>"; };
+		F940EE41288FB7A50090F733 /* SignupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
+		F940EE442891076D0090F733 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		F940EE46289107DB0090F733 /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
+		75C0EA3128910BD700A0C213 /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
 		F9A7E7EF2889470E00EC6031 /* KeyChain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyChain.swift; sourceTree = "<group>"; };
 		F9CB689828852C8E002723F2 /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
 		F9CB689A288533F1002723F2 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -53,7 +61,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F9CB689F28854DD7002723F2 /* FirebaseAuth in Frameworks */,
+				F940EE40288FB2A70090F733 /* FirebaseAuth in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,8 +84,10 @@
 			isa = PBXGroup;
 			children = (
 				7547FCF1287FECA700A8FA9A /* ViewController.swift */,
+				75C0EA3128910BD700A0C213 /* WebViewController.swift */,
 				F9CB689A288533F1002723F2 /* LoginViewController.swift */,
 				790F25602891317A00054B54 /* TimerViewController.swift */,
+				F940EE41288FB7A50090F733 /* SignupViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -103,18 +113,28 @@
 		7547FCEC287FECA700A8FA9A /* shaka */ = {
 			isa = PBXGroup;
 			children = (
+				F940EE43289107520090F733 /* Model */,
 				75095774288E8DAD00A82F64 /* View */,
 				75095775288E8DE300A82F64 /* Controller */,
 				F9CB689C2885386E002723F2 /* shaka.entitlements */,
 				7547FCED287FECA700A8FA9A /* AppDelegate.swift */,
 				7547FCEF287FECA700A8FA9A /* SceneDelegate.swift */,
 				F9A7E7EF2889470E00EC6031 /* KeyChain.swift */,
+				F940EE46289107DB0090F733 /* APIClient.swift */,
 				7547FCF6287FECA800A8FA9A /* Assets.xcassets */,
 				7547FCFB287FECA800A8FA9A /* Info.plist */,
 				F9CB68A0288550DC002723F2 /* GoogleService-Info.plist */,
 				7547FD07287FF58500A8FA9A /* .swiftlint.yml */,
 			);
 			path = shaka;
+			sourceTree = "<group>";
+		};
+		F940EE43289107520090F733 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F940EE442891076D0090F733 /* User.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,7 +155,7 @@
 			);
 			name = shaka;
 			packageProductDependencies = (
-				F9CB689E28854DD7002723F2 /* FirebaseAuth */,
+				F940EE3F288FB2A70090F733 /* FirebaseAuth */,
 			);
 			productName = shaka;
 			productReference = 7547FCEA287FECA700A8FA9A /* shaka.app */;
@@ -166,7 +186,7 @@
 			);
 			mainGroup = 7547FCE1287FECA700A8FA9A;
 			packageReferences = (
-				F9CB689D28854DD7002723F2 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				F940EE3E288FB2A70090F733 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
 			);
 			productRefGroup = 7547FCEB287FECA700A8FA9A /* Products */;
 			projectDirPath = "";
@@ -221,13 +241,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F940EE42288FB7A50090F733 /* SignupViewController.swift in Sources */,
 				F9CB689B288533F1002723F2 /* LoginViewController.swift in Sources */,
+				75C0EA3228910BD700A0C213 /* WebViewController.swift in Sources */,
 				7547FCF2287FECA700A8FA9A /* ViewController.swift in Sources */,
+				F940EE47289107DB0090F733 /* APIClient.swift in Sources */,
 				F9A7E7F02889470E00EC6031 /* KeyChain.swift in Sources */,
 				7547FCEE287FECA700A8FA9A /* AppDelegate.swift in Sources */,
 				790F25612891317A00054B54 /* TimerViewController.swift in Sources */,
 				7547FCF0287FECA700A8FA9A /* SceneDelegate.swift in Sources */,
 				7928591F28919D1E0054683A /* TimerButton.swift in Sources */,
+				F940EE452891076D0090F733 /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -455,20 +479,20 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		F9CB689D28854DD7002723F2 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+		F940EE3E288FB2A70090F733 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
 			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 9.0.0;
+				branch = master;
+				kind = branch;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		F9CB689E28854DD7002723F2 /* FirebaseAuth */ = {
+		F940EE3F288FB2A70090F733 /* FirebaseAuth */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = F9CB689D28854DD7002723F2 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			package = F940EE3E288FB2A70090F733 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
 			productName = FirebaseAuth;
 		};
 /* End XCSwiftPackageProductDependency section */

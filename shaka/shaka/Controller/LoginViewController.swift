@@ -27,9 +27,9 @@ class LoginViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-    private func moveToMain() {
-        let storyboard = UIStoryboard(name: "Main", bundle: Bundle.main)
-        let mainViewController = storyboard.instantiateViewController(identifier: "ViewController")
+    private func moveTo(_ storyboard: String, _ viewController: String) {
+        let storyboard = UIStoryboard(name: storyboard, bundle: Bundle.main)
+        let mainViewController = storyboard.instantiateViewController(identifier: viewController)
         mainViewController.modalPresentationStyle = .fullScreen
         self.present(mainViewController, animated: true)
     }
@@ -78,9 +78,27 @@ extension LoginViewController: ASAuthorizationControllerDelegate {
                     print("firebase access token: \(idToken ?? "NULL")")
                     KeyChain.create(key: "accessToken", token: idToken ?? "")
 
-                    // After save accessToken, move to Main
-                    self.moveToMain()
+                    // After save accessToken, move to Main or Signup
+                    self.checkUser()
                 }
+            }
+        }
+    }
+}
+
+extension LoginViewController {
+    func checkUser() {
+        print("check user")
+        Task {
+            do {
+                let user = try await APIClient().checkUser()
+                if user.nickname != nil {
+                    self.moveTo("Main", "ViewController")
+                } else {
+                    self.moveTo("Login", "SignupViewController")
+                }
+            } catch NetworkError.invalidURL {
+                print("Invalid URL ERROR!")
             }
         }
     }
