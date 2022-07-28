@@ -19,6 +19,10 @@
 		75C0EA3228910BD700A0C213 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75C0EA3128910BD700A0C213 /* WebViewController.swift */; };
 		75C0EA3428926B6B00A0C213 /* WeatherNotification.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 75C0EA3328926B6B00A0C213 /* WeatherNotification.storyboard */; };
 		75C0EA3628926B9300A0C213 /* WeatherNotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75C0EA3528926B9300A0C213 /* WeatherNotificationViewController.swift */; };
+		790F255F2891315B00054B54 /* Timer.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 790F255E2891315B00054B54 /* Timer.storyboard */; };
+		790F25612891317A00054B54 /* TimerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 790F25602891317A00054B54 /* TimerViewController.swift */; };
+		7928591F28919D1E0054683A /* TimerButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7928591E28919D1E0054683A /* TimerButton.swift */; };
+		79E3A355289274D5009FD5EF /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 79E3A354289274D5009FD5EF /* FirebaseAuth */; };
 		F940EE40288FB2A70090F733 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = F940EE3F288FB2A70090F733 /* FirebaseAuth */; };
 		F940EE42288FB7A50090F733 /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F940EE41288FB7A50090F733 /* SignupViewController.swift */; };
 		F940EE452891076D0090F733 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = F940EE442891076D0090F733 /* User.swift */; };
@@ -44,6 +48,9 @@
 		75C0EA3128910BD700A0C213 /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
 		75C0EA3328926B6B00A0C213 /* WeatherNotification.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = WeatherNotification.storyboard; sourceTree = "<group>"; };
 		75C0EA3528926B9300A0C213 /* WeatherNotificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherNotificationViewController.swift; sourceTree = "<group>"; };
+		790F255E2891315B00054B54 /* Timer.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Timer.storyboard; sourceTree = "<group>"; };
+		790F25602891317A00054B54 /* TimerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerViewController.swift; sourceTree = "<group>"; };
+		7928591E28919D1E0054683A /* TimerButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerButton.swift; sourceTree = "<group>"; };
 		F940EE41288FB7A50090F733 /* SignupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
 		F940EE442891076D0090F733 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		F940EE46289107DB0090F733 /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
@@ -60,6 +67,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F940EE40288FB2A70090F733 /* FirebaseAuth in Frameworks */,
+				79E3A355289274D5009FD5EF /* FirebaseAuth in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,7 +80,9 @@
 				7547FCF3287FECA700A8FA9A /* Main.storyboard */,
 				75C0EA3328926B6B00A0C213 /* WeatherNotification.storyboard */,
 				F9CB689828852C8E002723F2 /* Login.storyboard */,
+				790F255E2891315B00054B54 /* Timer.storyboard */,
 				7547FCF8287FECA800A8FA9A /* LaunchScreen.storyboard */,
+				7928591E28919D1E0054683A /* TimerButton.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -83,6 +93,7 @@
 				7547FCF1287FECA700A8FA9A /* ViewController.swift */,
 				75C0EA3128910BD700A0C213 /* WebViewController.swift */,
 				F9CB689A288533F1002723F2 /* LoginViewController.swift */,
+				790F25602891317A00054B54 /* TimerViewController.swift */,
 				F940EE41288FB7A50090F733 /* SignupViewController.swift */,
 				75C0EA3528926B9300A0C213 /* WeatherNotificationViewController.swift */,
 			);
@@ -153,6 +164,7 @@
 			name = shaka;
 			packageProductDependencies = (
 				F940EE3F288FB2A70090F733 /* FirebaseAuth */,
+				79E3A354289274D5009FD5EF /* FirebaseAuth */,
 			);
 			productName = shaka;
 			productReference = 7547FCEA287FECA700A8FA9A /* shaka.app */;
@@ -184,6 +196,7 @@
 			mainGroup = 7547FCE1287FECA700A8FA9A;
 			packageReferences = (
 				F940EE3E288FB2A70090F733 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				79E3A353289274D5009FD5EF /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
 			);
 			productRefGroup = 7547FCEB287FECA700A8FA9A /* Products */;
 			projectDirPath = "";
@@ -204,6 +217,7 @@
 				7547FD0C287FF70F00A8FA9A /* .gitattributes in Resources */,
 				F9CB689928852C8E002723F2 /* Login.storyboard in Resources */,
 				75C0EA3428926B6B00A0C213 /* WeatherNotification.storyboard in Resources */,
+				790F255F2891315B00054B54 /* Timer.storyboard in Resources */,
 				7547FD08287FF58500A8FA9A /* .swiftlint.yml in Resources */,
 				7547FCFA287FECA800A8FA9A /* LaunchScreen.storyboard in Resources */,
 				7547FCF7287FECA800A8FA9A /* Assets.xcassets in Resources */,
@@ -246,7 +260,9 @@
 				F940EE47289107DB0090F733 /* APIClient.swift in Sources */,
 				F9A7E7F02889470E00EC6031 /* KeyChain.swift in Sources */,
 				7547FCEE287FECA700A8FA9A /* AppDelegate.swift in Sources */,
+				790F25612891317A00054B54 /* TimerViewController.swift in Sources */,
 				7547FCF0287FECA700A8FA9A /* SceneDelegate.swift in Sources */,
+				7928591F28919D1E0054683A /* TimerButton.swift in Sources */,
 				F940EE452891076D0090F733 /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -475,6 +491,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		79E3A353289274D5009FD5EF /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 9.0.0;
+			};
+		};
 		F940EE3E288FB2A70090F733 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
@@ -486,6 +510,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		79E3A354289274D5009FD5EF /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 79E3A353289274D5009FD5EF /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
 		F940EE3F288FB2A70090F733 /* FirebaseAuth */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = F940EE3E288FB2A70090F733 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
