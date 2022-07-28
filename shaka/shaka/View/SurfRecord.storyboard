@@ -163,10 +163,10 @@
             </objects>
             <point key="canvasLocation" x="60" y="95.97156398104265"/>
         </scene>
-        <!--View Controller-->
+        <!--Surf Record Graph View Controller-->
         <scene sceneID="WNW-Kt-5nt">
             <objects>
-                <viewController id="qXT-m9-MtM" sceneMemberID="viewController">
+                <viewController id="qXT-m9-MtM" customClass="SurfRecordGraphViewController" customModule="shaka" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="KDp-WF-Uuw">
                         <rect key="frame" x="0.0" y="0.0" width="340" height="293.66666666666669"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -182,14 +182,32 @@
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="Xos-Es-tbe">
-                                        <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="" id="Xos-Es-tbe">
+                                        <rect key="frame" x="0.0" y="0.0" width="45" height="45"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="hPn-o4-n5k">
-                                            <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="45" height="45"/>
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="7/28" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rlR-KZ-qLw">
+                                                    <rect key="frame" x="13" y="17" width="18" height="10"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="8"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="rlR-KZ-qLw" firstAttribute="top" secondItem="hPn-o4-n5k" secondAttribute="top" constant="17" id="6U4-Hp-4FQ"/>
+                                                <constraint firstAttribute="trailing" secondItem="rlR-KZ-qLw" secondAttribute="trailing" constant="14" id="Amo-7u-8Sx"/>
+                                                <constraint firstItem="rlR-KZ-qLw" firstAttribute="leading" secondItem="hPn-o4-n5k" secondAttribute="leading" constant="13" id="P1G-3p-3se"/>
+                                                <constraint firstAttribute="bottom" secondItem="rlR-KZ-qLw" secondAttribute="bottom" constant="18" id="rfk-99-gOy"/>
+                                            </constraints>
                                         </collectionViewCellContentView>
                                         <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
+                                        <size key="customSize" width="45" height="45"/>
+                                        <connections>
+                                            <outlet property="dateLabel" destination="rlR-KZ-qLw" id="f5R-Ks-mIE"/>
+                                        </connections>
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
@@ -202,10 +220,10 @@
             </objects>
             <point key="canvasLocation" x="927.69230769230762" y="30.568720379146917"/>
         </scene>
-        <!--View Controller-->
+        <!--Show Surf Record View Controller-->
         <scene sceneID="FXI-Cx-seL">
             <objects>
-                <viewController id="pb3-3K-rsl" sceneMemberID="viewController">
+                <viewController id="pb3-3K-rsl" customClass="ShowSurfRecordViewController" customModule="shaka" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="m3T-Mk-OPU">
                         <rect key="frame" x="0.0" y="0.0" width="340" height="155"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

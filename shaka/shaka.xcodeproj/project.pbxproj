@@ -19,6 +19,9 @@
 		EE8351B92892293900F876A8 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = EE8351B82892293900F876A8 /* GoogleService-Info.plist */; };
 		EE8351BB2892294200F876A8 /* SurfRecord.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE8351BA2892294200F876A8 /* SurfRecord.storyboard */; };
 		EE8351BD2892294F00F876A8 /* SurfRecordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE8351BC2892294F00F876A8 /* SurfRecordViewController.swift */; };
+		EEFF9F192892AB0600E5D4B2 /* SurfRecordGraphViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEFF9F182892AB0600E5D4B2 /* SurfRecordGraphViewController.swift */; };
+		EEFF9F1B2892AB1C00E5D4B2 /* ShowSurfRecordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEFF9F1A2892AB1C00E5D4B2 /* ShowSurfRecordViewController.swift */; };
+		EEFF9F212892B29300E5D4B2 /* SurfDateCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEFF9F202892B29300E5D4B2 /* SurfDateCollectionViewCell.swift */; };
 		F9A7E7F02889470E00EC6031 /* KeyChain.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9A7E7EF2889470E00EC6031 /* KeyChain.swift */; };
 		F9CB689928852C8E002723F2 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F9CB689828852C8E002723F2 /* Login.storyboard */; };
 		F9CB689B288533F1002723F2 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9CB689A288533F1002723F2 /* LoginViewController.swift */; };
@@ -40,6 +43,9 @@
 		EE8351B82892293900F876A8 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		EE8351BA2892294200F876A8 /* SurfRecord.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SurfRecord.storyboard; sourceTree = "<group>"; };
 		EE8351BC2892294F00F876A8 /* SurfRecordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurfRecordViewController.swift; sourceTree = "<group>"; };
+		EEFF9F182892AB0600E5D4B2 /* SurfRecordGraphViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurfRecordGraphViewController.swift; sourceTree = "<group>"; };
+		EEFF9F1A2892AB1C00E5D4B2 /* ShowSurfRecordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowSurfRecordViewController.swift; sourceTree = "<group>"; };
+		EEFF9F202892B29300E5D4B2 /* SurfDateCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurfDateCollectionViewCell.swift; sourceTree = "<group>"; };
 		F9A7E7EF2889470E00EC6031 /* KeyChain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyChain.swift; sourceTree = "<group>"; };
 		F9CB689828852C8E002723F2 /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
 		F9CB689A288533F1002723F2 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -74,7 +80,7 @@
 			children = (
 				7547FCF1287FECA700A8FA9A /* ViewController.swift */,
 				F9CB689A288533F1002723F2 /* LoginViewController.swift */,
-				EE8351BC2892294F00F876A8 /* SurfRecordViewController.swift */,
+				EEFF9F1C2892AB2100E5D4B2 /* SurfRecordViewController */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -102,6 +108,7 @@
 			children = (
 				75095774288E8DAD00A82F64 /* View */,
 				75095775288E8DE300A82F64 /* Controller */,
+				EEFF9F1F2892AEE700E5D4B2 /* Cell */,
 				F9CB689C2885386E002723F2 /* shaka.entitlements */,
 				7547FCED287FECA700A8FA9A /* AppDelegate.swift */,
 				7547FCEF287FECA700A8FA9A /* SceneDelegate.swift */,
@@ -112,6 +119,24 @@
 				7547FD07287FF58500A8FA9A /* .swiftlint.yml */,
 			);
 			path = shaka;
+			sourceTree = "<group>";
+		};
+		EEFF9F1C2892AB2100E5D4B2 /* SurfRecordViewController */ = {
+			isa = PBXGroup;
+			children = (
+				EE8351BC2892294F00F876A8 /* SurfRecordViewController.swift */,
+				EEFF9F182892AB0600E5D4B2 /* SurfRecordGraphViewController.swift */,
+				EEFF9F1A2892AB1C00E5D4B2 /* ShowSurfRecordViewController.swift */,
+			);
+			path = SurfRecordViewController;
+			sourceTree = "<group>";
+		};
+		EEFF9F1F2892AEE700E5D4B2 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				EEFF9F202892B29300E5D4B2 /* SurfDateCollectionViewCell.swift */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -220,9 +245,12 @@
 			files = (
 				F9CB689B288533F1002723F2 /* LoginViewController.swift in Sources */,
 				7547FCF2287FECA700A8FA9A /* ViewController.swift in Sources */,
+				EEFF9F192892AB0600E5D4B2 /* SurfRecordGraphViewController.swift in Sources */,
 				F9A7E7F02889470E00EC6031 /* KeyChain.swift in Sources */,
+				EEFF9F1B2892AB1C00E5D4B2 /* ShowSurfRecordViewController.swift in Sources */,
 				EE8351BD2892294F00F876A8 /* SurfRecordViewController.swift in Sources */,
 				7547FCEE287FECA700A8FA9A /* AppDelegate.swift in Sources */,
+				EEFF9F212892B29300E5D4B2 /* SurfDateCollectionViewCell.swift in Sources */,
 				7547FCF0287FECA700A8FA9A /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
