@@ -19,7 +19,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="X6c-Z2-i6O">
-                                <rect key="frame" x="25" y="44" width="340" height="626"/>
+                                <rect key="frame" x="25" y="44" width="340" height="562.33333333333337"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="wdB-Jm-B71">
                                         <rect key="frame" x="0.0" y="0.0" width="257" height="60"/>
@@ -43,7 +43,7 @@
                                         </constraints>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="LAh-ZV-rbl">
-                                        <rect key="frame" x="0.0" y="90" width="340" height="351"/>
+                                        <rect key="frame" x="0.0" y="90" width="340" height="287.33333333333331"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="eV9-Hb-Rfo">
                                                 <rect key="frame" x="0.0" y="0.0" width="340" height="17"/>
@@ -64,7 +64,7 @@
                                                 </subviews>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="b1j-Fl-AEg">
-                                                <rect key="frame" x="0.0" y="37" width="340" height="314"/>
+                                                <rect key="frame" x="0.0" y="37.000000000000014" width="340" height="250.33333333333337"/>
                                                 <subviews>
                                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="AHm-SU-F0d">
                                                         <rect key="frame" x="0.0" y="0.0" width="340" height="20.333333333333332"/>
@@ -114,7 +114,7 @@
                                                         </subviews>
                                                     </stackView>
                                                     <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="poO-Sk-XQV">
-                                                        <rect key="frame" x="0.0" y="20.333333333333343" width="340" height="293.66666666666663"/>
+                                                        <rect key="frame" x="0.0" y="20.333333333333343" width="340" height="230"/>
                                                         <connections>
                                                             <segue destination="qXT-m9-MtM" kind="embed" id="C2g-vn-gty"/>
                                                         </connections>
@@ -129,7 +129,7 @@
                                         </constraints>
                                     </stackView>
                                     <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jw5-Hy-pyB">
-                                        <rect key="frame" x="0.0" y="471" width="340" height="155"/>
+                                        <rect key="frame" x="0.0" y="407.33333333333331" width="340" height="154.99999999999994"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="340" id="cQb-mg-jhO"/>
                                             <constraint firstAttribute="height" constant="155" id="e4B-El-TBL"/>
@@ -152,7 +152,7 @@
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="X6c-Z2-i6O" secondAttribute="bottom" constant="140" id="6KQ-Q9-o4C"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="X6c-Z2-i6O" secondAttribute="bottom" constant="203.66666666666663" id="Ce4-QE-xks"/>
                             <constraint firstAttribute="trailing" secondItem="X6c-Z2-i6O" secondAttribute="trailing" constant="25" id="ETy-TZ-u6M"/>
                             <constraint firstItem="X6c-Z2-i6O" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="25" id="NqV-Ct-iNi"/>
                             <constraint firstItem="X6c-Z2-i6O" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="yFt-hi-m1d"/>
@@ -168,24 +168,23 @@
             <objects>
                 <viewController id="qXT-m9-MtM" customClass="SurfRecordGraphViewController" customModule="shaka" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="KDp-WF-Uuw">
-                        <rect key="frame" x="0.0" y="0.0" width="340" height="293.66666666666669"/>
+                        <rect key="frame" x="0.0" y="0.0" width="340" height="230"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="I17-d0-JHU">
-                                <rect key="frame" x="0.0" y="0.0" width="340" height="294"/>
+                                <rect key="frame" x="0.0" y="0.0" width="340" height="280"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="systemIndigoColor"/>
-                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="M5c-Gh-FRp">
-                                    <size key="itemSize" width="128" height="128"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="3" minimumInteritemSpacing="3" id="M5c-Gh-FRp">
+                                    <size key="itemSize" width="45" height="45"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="" id="Xos-Es-tbe">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cell" id="Xos-Es-tbe" customClass="SurfDateCollectionViewCell" customModule="shaka" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="45" height="45"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="hPn-o4-n5k">
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="hba-5c-VfU">
                                             <rect key="frame" x="0.0" y="0.0" width="45" height="45"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
@@ -197,24 +196,30 @@
                                                 </label>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="rlR-KZ-qLw" firstAttribute="top" secondItem="hPn-o4-n5k" secondAttribute="top" constant="17" id="6U4-Hp-4FQ"/>
+                                                <constraint firstItem="rlR-KZ-qLw" firstAttribute="top" secondItem="hba-5c-VfU" secondAttribute="top" constant="17" id="6U4-Hp-4FQ"/>
                                                 <constraint firstAttribute="trailing" secondItem="rlR-KZ-qLw" secondAttribute="trailing" constant="14" id="Amo-7u-8Sx"/>
-                                                <constraint firstItem="rlR-KZ-qLw" firstAttribute="leading" secondItem="hPn-o4-n5k" secondAttribute="leading" constant="13" id="P1G-3p-3se"/>
+                                                <constraint firstItem="rlR-KZ-qLw" firstAttribute="leading" secondItem="hba-5c-VfU" secondAttribute="leading" constant="13" id="P1G-3p-3se"/>
                                                 <constraint firstAttribute="bottom" secondItem="rlR-KZ-qLw" secondAttribute="bottom" constant="18" id="rfk-99-gOy"/>
                                             </constraints>
                                         </collectionViewCellContentView>
-                                        <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
+                                        <color key="backgroundColor" red="0.87117665655733356" green="0.88205761337231758" blue="0.89070285390121773" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <size key="customSize" width="45" height="45"/>
                                         <connections>
                                             <outlet property="dateLabel" destination="rlR-KZ-qLw" id="f5R-Ks-mIE"/>
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="qXT-m9-MtM" id="s08-Ng-3q6"/>
+                                    <outlet property="delegate" destination="qXT-m9-MtM" id="SEX-Ap-rg8"/>
+                                </connections>
                             </collectionView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="TF5-g9-WQB"/>
-                        <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
                     </view>
+                    <connections>
+                        <outlet property="surfGraphCollectionView" destination="I17-d0-JHU" id="dfB-Tp-Q6y"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jNQ-8x-LZw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -323,17 +328,11 @@
     <resources>
         <image name="color-set" width="147" height="17"/>
         <image name="title-surfer" width="59" height="59"/>
-        <systemColor name="opaqueSeparatorColor">
-            <color red="0.77647058823529413" green="0.77647058823529413" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
         <systemColor name="systemGreenColor">
             <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-        <systemColor name="systemIndigoColor">
-            <color red="0.34509803921568627" green="0.33725490196078434" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

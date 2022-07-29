@@ -10,4 +10,8 @@ import UIKit
 class SurfDateCollectionViewCell: UICollectionViewCell {
     
     @IBOutlet weak var dateLabel: UILabel!
+    
+    func configure(with dateOfSurf: String) {
+        self.dateLabel.text = dateOfSurf
+    }
 }
