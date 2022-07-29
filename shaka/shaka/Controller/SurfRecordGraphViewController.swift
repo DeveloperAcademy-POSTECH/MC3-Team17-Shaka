@@ -34,6 +34,6 @@ class SurfRecordGraphViewController: UIViewController, UICollectionViewDelegate,
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        print("Date: \(dataSource[indexPath.item])")
+        let selectDate = dataSource[indexPath.item]
     }
 }

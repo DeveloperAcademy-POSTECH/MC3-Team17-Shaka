@@ -7,12 +7,22 @@
 
 import UIKit
 
-class SurfRecordViewController: UICollectionViewController {
-    @IBOutlet weak var surfRecordTitle: UILabel!
-    @IBOutlet weak var surfMonthLabel: UILabel!
+class SurfRecordViewController: UIViewController {
+    
+    weak override var parent: UIViewController? { get }
+    
+    @IBOutlet weak var surfRecordView: UIView!
+    @IBOutlet weak var dateLabel: UILabel!
+    @IBOutlet weak var totalTimeLabel: UILabel!
+    @IBOutlet weak var standingTimeLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        surfRecordView.layer.cornerRadius = 10
+        
+        surfRecordView.layer.shadowOffset = CGSize(width: 1, height: 1)
+        surfRecordView.layer.shadowOpacity = 0.2
+        surfRecordView.layer.shadowRadius = 10
     }
 }
