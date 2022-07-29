@@ -252,6 +252,15 @@
                                                     <constraint firstItem="tjz-ux-f1o" firstAttribute="leading" secondItem="g5E-u5-ldM" secondAttribute="leading" id="Xvd-fT-fMF"/>
                                                 </constraints>
                                             </stackView>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="22f-QZ-2kZ">
+                                                <rect key="frame" x="0.0" y="0.0" width="374" height="190"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain"/>
+                                                <connections>
+                                                    <segue destination="y0a-8a-jui" kind="show" id="Pgc-jw-BBc"/>
+                                                </connections>
+                                            </button>
                                         </subviews>
                                         <constraints>
                                             <constraint firstAttribute="bottom" secondItem="5MZ-9B-mla" secondAttribute="bottom" id="0Xe-k0-7ZJ"/>
@@ -458,10 +467,12 @@
             </objects>
             <point key="canvasLocation" x="664" y="-121"/>
         </scene>
-        <!--Storyboard Reference-->
+        <!--Timer-->
         <scene sceneID="L26-JG-dsp">
             <objects>
-                <viewControllerPlaceholder storyboardIdentifier="TimerViewController" id="y0a-8a-jui" sceneMemberID="viewController"/>
+                <viewControllerPlaceholder storyboardIdentifier="TimerViewController" storyboardName="Timer" id="y0a-8a-jui" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="jnb-W8-2Xa"/>
+                </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iHh-Vs-fRX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="707" y="106"/>
