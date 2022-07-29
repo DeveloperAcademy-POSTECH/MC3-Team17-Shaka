@@ -9,11 +9,20 @@ import UIKit
 
 class SurfRecordViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate {
 
+    @IBOutlet weak var showSurfRecordView: UIView!
     @IBOutlet weak var surfGraphCV: UICollectionView!
-    @IBOutlet weak var surfDate: UILabel!
+    @IBOutlet weak var surfDateLabel: UILabel!
+    @IBOutlet weak var whenSurfLabel: UILabel!
+    @IBOutlet weak var totalTimeLabel: UILabel!
+    @IBOutlet weak var standingTimeLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        self.showSurfRecordView.layer.cornerRadius = 10
+        self.showSurfRecordView.layer.shadowOffset = CGSize(width: 1, height: 1)
+        self.showSurfRecordView.layer.shadowOpacity = 0.2
+        self.showSurfRecordView.layer.shadowRadius = 4
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
@@ -34,7 +43,11 @@ class SurfRecordViewController: UIViewController, UICollectionViewDataSource, UI
         }
         return dateCell
     }
-//    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-//        print(dataSource[indexPath.item])
-//    }
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let date = dataSource[indexPath.item].date
+        self.surfDateLabel.text = date.replacingOccurrences(of: "/", with: "월 ") + "일"
+        self.whenSurfLabel.text = dataSource[indexPath.item].time
+        self.totalTimeLabel.text = dataSource[indexPath.item].totalSecond
+        self.standingTimeLabel.text = dataSource[indexPath.item].standSecond
+    }
 }
