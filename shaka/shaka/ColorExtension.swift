@@ -8,8 +8,8 @@
 import UIKit
 
 extension UIColor {
-    static let cellBackground1 = UIColor(named: "CellBackground1")
-    static let cellBackground2 = UIColor(named: "CellBackground2")
-    static let cellBackground3 = UIColor(named: "CellBackground3")
-    static let cellBackground4 = UIColor(named: "CellBackground4")
+    static let cellBackgroundLightGray = UIColor(named: "CellBackground1")
+    static let cellBackgroundGray = UIColor(named: "CellBackground2")
+    static let cellBackgroundLightBlue = UIColor(named: "CellBackground3")
+    static let cellBackgroundBlue = UIColor(named: "CellBackground4")
 }

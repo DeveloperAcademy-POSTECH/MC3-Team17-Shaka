@@ -159,6 +159,10 @@
                             <constraint firstItem="C0T-fX-m3D" firstAttribute="bottom" secondItem="eiP-gH-FOv" secondAttribute="bottom" constant="203.66666666666663" id="wRq-KG-Kq3"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="surfMonthLabel" destination="4G4-4M-W1a" id="cdc-l5-DyO"/>
+                        <outlet property="surfingLogTitle" destination="pnb-IK-92Q" id="9s5-s4-LNR"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HLc-pF-Bie" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -169,7 +173,7 @@
             <objects>
                 <viewController id="tob-HI-UyC" customClass="SurfRecordGraphViewController" customModule="shaka" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="zpH-fW-WXp">
-                        <rect key="frame" x="0.0" y="0.0" width="364" height="285.5"/>
+                        <rect key="frame" x="0.0" y="0.0" width="364" height="285"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="4Vl-wT-cDs">
@@ -227,10 +231,10 @@
             </objects>
             <point key="canvasLocation" x="927.69230769230762" y="30.568720379146917"/>
         </scene>
-        <!--View Controller-->
+        <!--Surf Record Show View Controller-->
         <scene sceneID="pK9-Gj-zJr">
             <objects>
-                <viewController id="i8D-jz-t7O" sceneMemberID="viewController">
+                <viewController id="i8D-jz-t7O" customClass="SurfRecordShowViewController" customModule="shaka" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Ne7-Sc-tFW">
                         <rect key="frame" x="0.0" y="0.0" width="364" height="155"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -321,6 +325,14 @@
                             <constraint firstItem="zuS-Lh-gEx" firstAttribute="top" secondItem="Ne7-Sc-tFW" secondAttribute="top" constant="20" id="W9f-P5-tS0"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="beachName" destination="1y3-xz-GwZ" id="a3e-Es-stV"/>
+                        <outlet property="standingTime" destination="xrc-8c-riS" id="AZe-tg-4gW"/>
+                        <outlet property="standingTimeLabel" destination="cFC-Xp-U3z" id="u0K-Y8-iR0"/>
+                        <outlet property="surfDateLabel" destination="afd-eP-xxx" id="zmI-GV-XS8"/>
+                        <outlet property="totalSurfTime" destination="Q8H-xA-Xxc" id="aW8-S0-AP5"/>
+                        <outlet property="totalSurfTimeLabel" destination="bo0-5m-kjb" id="6lv-bL-9B6"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cYg-rt-MMT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
