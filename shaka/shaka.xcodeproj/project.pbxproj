@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		753A009F2893971600186F91 /* PushViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 753A009E2893971600186F91 /* PushViewController.swift */; };
 		7547FCEE287FECA700A8FA9A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7547FCED287FECA700A8FA9A /* AppDelegate.swift */; };
 		7547FCF0287FECA700A8FA9A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7547FCEF287FECA700A8FA9A /* SceneDelegate.swift */; };
 		7547FCF2287FECA700A8FA9A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7547FCF1287FECA700A8FA9A /* ViewController.swift */; };
@@ -16,7 +17,9 @@
 		7547FD08287FF58500A8FA9A /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = 7547FD07287FF58500A8FA9A /* .swiftlint.yml */; };
 		7547FD0A287FF66700A8FA9A /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 7547FD09287FF66700A8FA9A /* .gitignore */; };
 		7547FD0C287FF70F00A8FA9A /* .gitattributes in Resources */ = {isa = PBXBuildFile; fileRef = 7547FD0B287FF70F00A8FA9A /* .gitattributes */; };
+		758718FE28938E990051DB1E /* WeatherTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 758718FD28938E990051DB1E /* WeatherTVC.swift */; };
 		75C0EA3228910BD700A0C213 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75C0EA3128910BD700A0C213 /* WebViewController.swift */; };
+		75C0EA3428926B6B00A0C213 /* WeatherNotification.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 75C0EA3328926B6B00A0C213 /* WeatherNotification.storyboard */; };
 		790F255F2891315B00054B54 /* Timer.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 790F255E2891315B00054B54 /* Timer.storyboard */; };
 		790F25612891317A00054B54 /* TimerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 790F25602891317A00054B54 /* TimerViewController.swift */; };
 		7928591F28919D1E0054683A /* TimerButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7928591E28919D1E0054683A /* TimerButton.swift */; };
@@ -32,6 +35,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		753A009E2893971600186F91 /* PushViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushViewController.swift; sourceTree = "<group>"; };
 		7547FCEA287FECA700A8FA9A /* shaka.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = shaka.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7547FCED287FECA700A8FA9A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7547FCEF287FECA700A8FA9A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -43,7 +47,9 @@
 		7547FD07287FF58500A8FA9A /* .swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
 		7547FD09287FF66700A8FA9A /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		7547FD0B287FF70F00A8FA9A /* .gitattributes */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitattributes; sourceTree = "<group>"; };
+		758718FD28938E990051DB1E /* WeatherTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherTVC.swift; sourceTree = "<group>"; };
 		75C0EA3128910BD700A0C213 /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
+		75C0EA3328926B6B00A0C213 /* WeatherNotification.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = WeatherNotification.storyboard; sourceTree = "<group>"; };
 		790F255E2891315B00054B54 /* Timer.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Timer.storyboard; sourceTree = "<group>"; };
 		790F25602891317A00054B54 /* TimerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerViewController.swift; sourceTree = "<group>"; };
 		7928591E28919D1E0054683A /* TimerButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerButton.swift; sourceTree = "<group>"; };
@@ -74,6 +80,7 @@
 			isa = PBXGroup;
 			children = (
 				7547FCF3287FECA700A8FA9A /* Main.storyboard */,
+				75C0EA3328926B6B00A0C213 /* WeatherNotification.storyboard */,
 				F9CB689828852C8E002723F2 /* Login.storyboard */,
 				790F255E2891315B00054B54 /* Timer.storyboard */,
 				7547FCF8287FECA800A8FA9A /* LaunchScreen.storyboard */,
@@ -90,6 +97,8 @@
 				F9CB689A288533F1002723F2 /* LoginViewController.swift */,
 				790F25602891317A00054B54 /* TimerViewController.swift */,
 				F940EE41288FB7A50090F733 /* SignupViewController.swift */,
+				758718FD28938E990051DB1E /* WeatherTVC.swift */,
+				753A009E2893971600186F91 /* PushViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -210,6 +219,7 @@
 				F9CB68A1288550DC002723F2 /* GoogleService-Info.plist in Resources */,
 				7547FD0C287FF70F00A8FA9A /* .gitattributes in Resources */,
 				F9CB689928852C8E002723F2 /* Login.storyboard in Resources */,
+				75C0EA3428926B6B00A0C213 /* WeatherNotification.storyboard in Resources */,
 				790F255F2891315B00054B54 /* Timer.storyboard in Resources */,
 				7547FD08287FF58500A8FA9A /* .swiftlint.yml in Resources */,
 				7547FCFA287FECA800A8FA9A /* LaunchScreen.storyboard in Resources */,
@@ -246,9 +256,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				F940EE42288FB7A50090F733 /* SignupViewController.swift in Sources */,
+				753A009F2893971600186F91 /* PushViewController.swift in Sources */,
 				F9CB689B288533F1002723F2 /* LoginViewController.swift in Sources */,
 				75C0EA3228910BD700A0C213 /* WebViewController.swift in Sources */,
 				7547FCF2287FECA700A8FA9A /* ViewController.swift in Sources */,
+				758718FE28938E990051DB1E /* WeatherTVC.swift in Sources */,
 				F940EE47289107DB0090F733 /* APIClient.swift in Sources */,
 				F9A7E7F02889470E00EC6031 /* KeyChain.swift in Sources */,
 				7547FCEE287FECA700A8FA9A /* AppDelegate.swift in Sources */,
