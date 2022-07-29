@@ -25,7 +25,6 @@ class ViewController: UIViewController {
         goSurfView.layer.shadowOffset = CGSize(width: 1, height: 1)
         goSurfView.layer.shadowOpacity = 0.2
         goSurfView.layer.shadowRadius = 10
-//        goSurfView.layer.shadowColor = UIColor.gray.cgColor
         
         cardBackground.layer.cornerRadius = 10
         
