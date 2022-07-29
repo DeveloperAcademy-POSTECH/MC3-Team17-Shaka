@@ -25,10 +25,9 @@
 		7928591F28919D1E0054683A /* TimerButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7928591E28919D1E0054683A /* TimerButton.swift */; };
 		79E3A355289274D5009FD5EF /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 79E3A354289274D5009FD5EF /* FirebaseAuth */; };
 		EED801D02893BD6A006945A2 /* SurfRecord.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EED801CF2893BD6A006945A2 /* SurfRecord.storyboard */; };
-		EED801D22893BDE5006945A2 /* SurfRecordGraphViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EED801D12893BDE5006945A2 /* SurfRecordGraphViewController.swift */; };
 		EED801D42893BE04006945A2 /* SurfDateCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EED801D32893BE04006945A2 /* SurfDateCollectionViewCell.swift */; };
 		EED801D62893C186006945A2 /* ColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EED801D52893C186006945A2 /* ColorExtension.swift */; };
-		EED801E428940349006945A2 /* SurfRecordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EED801E328940349006945A2 /* SurfRecordViewController.swift */; };
+		EED801E828941D41006945A2 /* SurfRecordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EED801E728941D41006945A2 /* SurfRecordViewController.swift */; };
 		F940EE40288FB2A70090F733 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = F940EE3F288FB2A70090F733 /* FirebaseAuth */; };
 		F940EE42288FB7A50090F733 /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F940EE41288FB7A50090F733 /* SignupViewController.swift */; };
 		F940EE452891076D0090F733 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = F940EE442891076D0090F733 /* User.swift */; };
@@ -59,10 +58,9 @@
 		790F25602891317A00054B54 /* TimerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerViewController.swift; sourceTree = "<group>"; };
 		7928591E28919D1E0054683A /* TimerButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerButton.swift; sourceTree = "<group>"; };
 		EED801CF2893BD6A006945A2 /* SurfRecord.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SurfRecord.storyboard; sourceTree = "<group>"; };
-		EED801D12893BDE5006945A2 /* SurfRecordGraphViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurfRecordGraphViewController.swift; sourceTree = "<group>"; };
 		EED801D32893BE04006945A2 /* SurfDateCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurfDateCollectionViewCell.swift; sourceTree = "<group>"; };
 		EED801D52893C186006945A2 /* ColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtension.swift; sourceTree = "<group>"; };
-		EED801E328940349006945A2 /* SurfRecordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurfRecordViewController.swift; sourceTree = "<group>"; };
+		EED801E728941D41006945A2 /* SurfRecordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurfRecordViewController.swift; sourceTree = "<group>"; };
 		F940EE41288FB7A50090F733 /* SignupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
 		F940EE442891076D0090F733 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		F940EE46289107DB0090F733 /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
@@ -108,8 +106,7 @@
 				F9CB689A288533F1002723F2 /* LoginViewController.swift */,
 				790F25602891317A00054B54 /* TimerViewController.swift */,
 				F940EE41288FB7A50090F733 /* SignupViewController.swift */,
-				EED801E328940349006945A2 /* SurfRecordViewController.swift */,
-				EED801D12893BDE5006945A2 /* SurfRecordGraphViewController.swift */,
+				EED801E728941D41006945A2 /* SurfRecordViewController.swift */,
 				EED801D32893BE04006945A2 /* SurfDateCollectionViewCell.swift */,
 				758718FD28938E990051DB1E /* WeatherTVC.swift */,
 				753A009E2893971600186F91 /* PushViewController.swift */,
@@ -274,8 +271,6 @@
 				F940EE42288FB7A50090F733 /* SignupViewController.swift in Sources */,
 				753A009F2893971600186F91 /* PushViewController.swift in Sources */,
 				F9CB689B288533F1002723F2 /* LoginViewController.swift in Sources */,
-				EED801D22893BDE5006945A2 /* SurfRecordGraphViewController.swift in Sources */,
-				EED801E428940349006945A2 /* SurfRecordViewController.swift in Sources */,
 				75C0EA3228910BD700A0C213 /* WebViewController.swift in Sources */,
 				7547FCF2287FECA700A8FA9A /* ViewController.swift in Sources */,
 				EED801D62893C186006945A2 /* ColorExtension.swift in Sources */,
@@ -286,6 +281,7 @@
 				7547FCEE287FECA700A8FA9A /* AppDelegate.swift in Sources */,
 				790F25612891317A00054B54 /* TimerViewController.swift in Sources */,
 				7547FCF0287FECA700A8FA9A /* SceneDelegate.swift in Sources */,
+				EED801E828941D41006945A2 /* SurfRecordViewController.swift in Sources */,
 				7928591F28919D1E0054683A /* TimerButton.swift in Sources */,
 				F940EE452891076D0090F733 /* User.swift in Sources */,
 			);

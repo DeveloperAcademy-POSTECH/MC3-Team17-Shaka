@@ -14,7 +14,7 @@
         <!--Surf Record View Controller-->
         <scene sceneID="1mc-JU-8y7">
             <objects>
-                <viewController storyboardIdentifier="SurfRecordViewController" id="WWU-3j-lBH" customClass="SurfRecordViewController" sceneMemberID="viewController">
+                <viewController id="WWU-3j-lBH" customClass="SurfRecordViewController" customModule="shaka" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="F12-2Q-V6c">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -117,12 +117,49 @@
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="4SU-gQ-usY">
                                                         <rect key="frame" x="0.0" y="17" width="364" height="475"/>
                                                         <subviews>
-                                                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kNP-tX-9e6">
+                                                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Byb-nn-ieL">
                                                                 <rect key="frame" x="0.0" y="0.0" width="364" height="290"/>
+                                                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="4" minimumInteritemSpacing="4" id="JXm-3e-sHO">
+                                                                    <size key="itemSize" width="45" height="45"/>
+                                                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                                </collectionViewFlowLayout>
+                                                                <cells>
+                                                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cell" id="pjs-uu-jcn" customClass="SurfDateCollectionViewCell" customModule="shaka" customModuleProvider="target">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="45" height="45"/>
+                                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="8fV-Vo-PCs">
+                                                                            <rect key="frame" x="0.0" y="0.0" width="45" height="45"/>
+                                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                            <subviews>
+                                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wqZ-ft-ahV">
+                                                                                    <rect key="frame" x="0.0" y="17" width="45" height="10"/>
+                                                                                    <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="10"/>
+                                                                                    <nil key="textColor"/>
+                                                                                    <nil key="highlightedColor"/>
+                                                                                    <size key="shadowOffset" width="0.0" height="0.0"/>
+                                                                                </label>
+                                                                            </subviews>
+                                                                            <constraints>
+                                                                                <constraint firstAttribute="bottom" secondItem="wqZ-ft-ahV" secondAttribute="bottom" constant="18" id="CHL-wF-5Jz"/>
+                                                                                <constraint firstItem="wqZ-ft-ahV" firstAttribute="leading" secondItem="8fV-Vo-PCs" secondAttribute="leading" id="Ifn-Db-stN"/>
+                                                                                <constraint firstItem="wqZ-ft-ahV" firstAttribute="top" secondItem="8fV-Vo-PCs" secondAttribute="top" constant="17" id="KG8-p7-WL8"/>
+                                                                                <constraint firstAttribute="trailing" secondItem="wqZ-ft-ahV" secondAttribute="trailing" id="qc1-Ys-XEE"/>
+                                                                            </constraints>
+                                                                        </collectionViewCellContentView>
+                                                                        <color key="backgroundColor" red="0.87117665659999999" green="0.8820576134" blue="0.89070285390000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                                        <size key="customSize" width="45" height="45"/>
+                                                                        <connections>
+                                                                            <outlet property="dateLabel" destination="wqZ-ft-ahV" id="1fk-HA-Bjg"/>
+                                                                        </connections>
+                                                                    </collectionViewCell>
+                                                                </cells>
                                                                 <connections>
-                                                                    <segue destination="tob-HI-UyC" kind="embed" identifier="EmbedContainer" id="IUl-q7-esT"/>
+                                                                    <outlet property="dataSource" destination="WWU-3j-lBH" id="xQ5-Ut-o60"/>
+                                                                    <outlet property="delegate" destination="WWU-3j-lBH" id="gxK-G0-fSr"/>
                                                                 </connections>
-                                                            </containerView>
+                                                            </collectionView>
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YTd-DN-Ywu">
                                                                 <rect key="frame" x="0.0" y="320" width="364" height="155"/>
                                                                 <subviews>
@@ -226,78 +263,12 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="dateLabel" destination="afd-eP-xxx" id="iVh-Xc-OFS"/>
-                        <outlet property="standingTimeLabel" destination="xrc-8c-riS" id="SHz-Nm-lsu"/>
-                        <outlet property="surfRecordView" destination="YTd-DN-Ywu" id="6jc-7Z-inY"/>
-                        <outlet property="totalTimeLabel" destination="Q8H-xA-Xxc" id="59K-5C-ur2"/>
+                        <outlet property="surfGraphCV" destination="Byb-nn-ieL" id="RSn-rQ-UP8"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HLc-pF-Bie" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="59.420289855072468" y="95.758928571428569"/>
-        </scene>
-        <!--Surf Record Graph View Controller-->
-        <scene sceneID="VZH-Po-wyz">
-            <objects>
-                <viewController id="tob-HI-UyC" customClass="SurfRecordGraphViewController" customModule="shaka" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="zpH-fW-WXp">
-                        <rect key="frame" x="0.0" y="0.0" width="364" height="290"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="4Vl-wT-cDs">
-                                <rect key="frame" x="0.0" y="0.0" width="340" height="280"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="4" minimumInteritemSpacing="4" id="ISg-Tk-tRE">
-                                    <size key="itemSize" width="45" height="45"/>
-                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
-                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                </collectionViewFlowLayout>
-                                <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cell" id="ba3-iY-l9A" customClass="SurfDateCollectionViewCell" customModule="shaka" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="0.0" width="45" height="45"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="juA-OT-koe">
-                                            <rect key="frame" x="0.0" y="0.0" width="45" height="45"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Elh-Rn-a8z">
-                                                    <rect key="frame" x="0.0" y="17" width="45" height="10"/>
-                                                    <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="10"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                    <size key="shadowOffset" width="0.0" height="0.0"/>
-                                                </label>
-                                            </subviews>
-                                            <constraints>
-                                                <constraint firstItem="Elh-Rn-a8z" firstAttribute="top" secondItem="juA-OT-koe" secondAttribute="top" constant="17" id="Z98-3x-SDl"/>
-                                                <constraint firstAttribute="bottom" secondItem="Elh-Rn-a8z" secondAttribute="bottom" constant="18" id="n98-BH-0Vg"/>
-                                                <constraint firstAttribute="trailing" secondItem="Elh-Rn-a8z" secondAttribute="trailing" id="qLR-0h-3Hd"/>
-                                                <constraint firstItem="Elh-Rn-a8z" firstAttribute="leading" secondItem="juA-OT-koe" secondAttribute="leading" id="y7v-bg-xzk"/>
-                                            </constraints>
-                                        </collectionViewCellContentView>
-                                        <color key="backgroundColor" red="0.87117665659999999" green="0.8820576134" blue="0.89070285390000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                        <size key="customSize" width="45" height="45"/>
-                                        <connections>
-                                            <outlet property="dateLabel" destination="Elh-Rn-a8z" id="nAs-I0-hib"/>
-                                        </connections>
-                                    </collectionViewCell>
-                                </cells>
-                                <connections>
-                                    <outlet property="dataSource" destination="tob-HI-UyC" id="6ht-Ye-RU1"/>
-                                    <outlet property="delegate" destination="tob-HI-UyC" id="1hX-eg-DYC"/>
-                                </connections>
-                            </collectionView>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="0em-9U-0WN"/>
-                    </view>
-                    <connections>
-                        <outlet property="surfGraphCollectionView" destination="4Vl-wT-cDs" id="QDq-hf-3ue"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="IfB-q9-3vr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="927.69230769230762" y="30.568720379146917"/>
         </scene>
     </scenes>
     <resources>
