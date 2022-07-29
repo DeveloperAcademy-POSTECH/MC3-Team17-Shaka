@@ -10,6 +10,7 @@ import UIKit
 class SurfRecordViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate {
 
     @IBOutlet weak var surfGraphCV: UICollectionView!
+    @IBOutlet weak var surfDate: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,12 +24,16 @@ class SurfRecordViewController: UIViewController, UICollectionViewDataSource, UI
         guard let dateCell = surfGraphCV.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as? SurfDateCollectionViewCell else { return UICollectionViewCell() }
         dateCell.configure(with: dataSource[indexPath.item].date)
         dateCell.backgroundColor = dataSource[indexPath.item].degreeOfStand.cellBackground
+        dateCell.layer.cornerRadius = 2
         if indexPath.item == dataSource.count-1 {
             dateCell.isSelected = true
+            collectionView.selectItem(at: indexPath, animated: true, scrollPosition: .init())
+        }
+        if dataSource[indexPath.item].degreeOfStand == .low {
+            dateCell.dateLabel.textColor = .black
         }
         return dateCell
     }
-    
 //    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
 //        print(dataSource[indexPath.item])
 //    }

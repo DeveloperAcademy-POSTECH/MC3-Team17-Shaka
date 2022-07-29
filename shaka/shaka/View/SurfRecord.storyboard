@@ -90,7 +90,7 @@
                                                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                                             <subviews>
                                                                                 <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wqZ-ft-ahV">
-                                                                                    <rect key="frame" x="0.0" y="17" width="45" height="10"/>
+                                                                                    <rect key="frame" x="0.0" y="0.0" width="45" height="45"/>
                                                                                     <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="10"/>
                                                                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                                     <nil key="highlightedColor"/>
@@ -98,9 +98,9 @@
                                                                                 </label>
                                                                             </subviews>
                                                                             <constraints>
-                                                                                <constraint firstAttribute="bottom" secondItem="wqZ-ft-ahV" secondAttribute="bottom" constant="18" id="CHL-wF-5Jz"/>
+                                                                                <constraint firstAttribute="bottom" secondItem="wqZ-ft-ahV" secondAttribute="bottom" id="CHL-wF-5Jz"/>
                                                                                 <constraint firstItem="wqZ-ft-ahV" firstAttribute="leading" secondItem="8fV-Vo-PCs" secondAttribute="leading" id="Ifn-Db-stN"/>
-                                                                                <constraint firstItem="wqZ-ft-ahV" firstAttribute="top" secondItem="8fV-Vo-PCs" secondAttribute="top" constant="17" id="KG8-p7-WL8"/>
+                                                                                <constraint firstItem="wqZ-ft-ahV" firstAttribute="top" secondItem="8fV-Vo-PCs" secondAttribute="top" id="KG8-p7-WL8"/>
                                                                                 <constraint firstAttribute="trailing" secondItem="wqZ-ft-ahV" secondAttribute="trailing" id="qc1-Ys-XEE"/>
                                                                             </constraints>
                                                                         </collectionViewCellContentView>
@@ -219,6 +219,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="surfDate" destination="afd-eP-xxx" id="tHa-6S-McC"/>
                         <outlet property="surfGraphCV" destination="Byb-nn-ieL" id="RSn-rQ-UP8"/>
                     </connections>
                 </viewController>

@@ -14,13 +14,15 @@ class SurfDateCollectionViewCell: UICollectionViewCell {
     func configure(with dateOfSurf: String) {
         self.dateLabel.text = dateOfSurf
     }
-    
     override var isSelected: Bool {
         didSet {
             if isSelected {
                 dateLabel.isHidden = false
+                dateLabel.layer.borderColor = UIColor.blue.cgColor
+                dateLabel.layer.borderWidth = 2
             } else {
                 dateLabel.isHidden = true
+                dateLabel.layer.borderWidth = 0
             }
         }
     }
