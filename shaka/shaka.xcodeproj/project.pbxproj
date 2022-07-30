@@ -142,8 +142,7 @@
 				F940EE43289107520090F733 /* Model */,
 				75095774288E8DAD00A82F64 /* View */,
 				75095775288E8DE300A82F64 /* Controller */,
-				EED801E928942468006945A2 /* SurfRecordData.swift */,
-				EED801EB28942C80006945A2 /* MockData.swift */,
+				EED801EE28950F6A006945A2 /* DataModel */,
 				EED801D52893C186006945A2 /* ColorExtension.swift */,
 				7547FCED287FECA700A8FA9A /* AppDelegate.swift */,
 				7547FCEF287FECA700A8FA9A /* SceneDelegate.swift */,
@@ -156,6 +155,15 @@
 				7547FD07287FF58500A8FA9A /* .swiftlint.yml */,
 			);
 			path = shaka;
+			sourceTree = "<group>";
+		};
+		EED801EE28950F6A006945A2 /* DataModel */ = {
+			isa = PBXGroup;
+			children = (
+				EED801E928942468006945A2 /* SurfRecordData.swift */,
+				EED801EB28942C80006945A2 /* MockData.swift */,
+			);
+			path = DataModel;
 			sourceTree = "<group>";
 		};
 		F940EE43289107520090F733 /* Model */ = {
