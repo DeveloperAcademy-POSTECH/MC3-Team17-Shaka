@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="44H-t9-T3D">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
@@ -19,7 +19,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="XqD-ik-1FY">
-                                <rect key="frame" x="20" y="44" width="374" height="778"/>
+                                <rect key="frame" x="20" y="88" width="374" height="745"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hzn-f1-5PU" userLabel="NavView">
                                         <rect key="frame" x="0.0" y="0.0" width="374" height="46"/>
@@ -62,7 +62,7 @@
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jqH-uo-K0J" userLabel="TitleView">
-                                        <rect key="frame" x="0.0" y="77.5" width="374" height="29"/>
+                                        <rect key="frame" x="0.0" y="71" width="374" height="29"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="GNI-yR-wlf">
                                                 <rect key="frame" x="0.0" y="0.0" width="166" height="29"/>
@@ -95,7 +95,7 @@
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8ZF-gP-of2" userLabel="PersonalView">
-                                        <rect key="frame" x="0.0" y="138" width="374" height="134"/>
+                                        <rect key="frame" x="0.0" y="125" width="374" height="134"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QTU-M4-hQT">
                                                 <rect key="frame" x="0.0" y="0.0" width="374" height="134"/>
@@ -186,7 +186,7 @@
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hj9-JB-rcK" userLabel="SurfView">
-                                        <rect key="frame" x="0.0" y="304" width="374" height="190"/>
+                                        <rect key="frame" x="0.0" y="284" width="374" height="190"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="MainBackground" translatesAutoresizingMaskIntoConstraints="NO" id="g6g-ij-UAX">
                                                 <rect key="frame" x="0.0" y="0.0" width="374" height="190"/>
@@ -199,7 +199,7 @@
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="29" translatesAutoresizingMaskIntoConstraints="NO" id="g5E-u5-ldM">
                                                 <rect key="frame" x="20" y="20" width="334" height="150"/>
                                                 <subviews>
-                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="tjz-ux-f1o">
+                                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tjz-ux-f1o">
                                                         <rect key="frame" x="0.0" y="0.0" width="118.5" height="43"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="가장 가까운 해변은" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HLC-qq-ZqD">
@@ -252,7 +252,7 @@
                                                     <constraint firstItem="tjz-ux-f1o" firstAttribute="leading" secondItem="g5E-u5-ldM" secondAttribute="leading" id="Xvd-fT-fMF"/>
                                                 </constraints>
                                             </stackView>
-                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="22f-QZ-2kZ">
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="22f-QZ-2kZ" userLabel="ButtonLink">
                                                 <rect key="frame" x="0.0" y="0.0" width="374" height="190"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <state key="normal" title="Button"/>
@@ -268,7 +268,7 @@
                                             <constraint firstAttribute="bottom" secondItem="g5E-u5-ldM" secondAttribute="bottom" constant="20" id="JIl-YE-iCw"/>
                                             <constraint firstItem="g5E-u5-ldM" firstAttribute="leading" secondItem="hj9-JB-rcK" secondAttribute="leading" constant="20" id="K6o-Ol-LiM"/>
                                             <constraint firstAttribute="trailing" secondItem="g5E-u5-ldM" secondAttribute="trailing" constant="20" id="QwC-nt-k9m"/>
-                                            <constraint firstAttribute="height" constant="190" id="UjC-dR-dpj"/>
+                                            <constraint firstAttribute="height" constant="190" id="cac-ge-49l"/>
                                             <constraint firstItem="5MZ-9B-mla" firstAttribute="leading" secondItem="hj9-JB-rcK" secondAttribute="leading" id="crC-sb-y8t"/>
                                             <constraint firstItem="g6g-ij-UAX" firstAttribute="top" secondItem="hj9-JB-rcK" secondAttribute="top" id="fYr-Hz-2uw"/>
                                             <constraint firstAttribute="trailing" secondItem="g6g-ij-UAX" secondAttribute="trailing" id="jJf-OW-0H8"/>
@@ -279,7 +279,7 @@
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xM9-2H-bXZ" userLabel="WebSheetView">
-                                        <rect key="frame" x="0.0" y="525.5" width="374" height="123"/>
+                                        <rect key="frame" x="0.0" y="499" width="374" height="123"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="oxa-U6-j8G">
                                                 <rect key="frame" x="11.5" y="0.0" width="351" height="123"/>
@@ -378,7 +378,7 @@
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Lmb-dw-pTc" userLabel="BottomView">
-                                        <rect key="frame" x="0.0" y="680" width="374" height="98"/>
+                                        <rect key="frame" x="0.0" y="647" width="374" height="98"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0XS-Zj-wgk">
                                                 <rect key="frame" x="0.0" y="0.0" width="374" height="50"/>
@@ -440,11 +440,11 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="XqD-ik-1FY" secondAttribute="trailing" constant="20" id="HQp-Xp-QLd"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="XqD-ik-1FY" secondAttribute="bottom" constant="40" id="Yma-nK-JFd"/>
                             <constraint firstItem="XqD-ik-1FY" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="dTo-x8-cFI"/>
                             <constraint firstItem="XqD-ik-1FY" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="pov-ff-G3v"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="ts8-JY-MWS"/>
                     <connections>
                         <outlet property="cardBackground" destination="QTU-M4-hQT" id="hn1-70-mXD"/>
                         <outlet property="getWaterButton" destination="UhK-Hc-lWZ" id="zW5-mZ-l3W"/>
@@ -455,7 +455,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="18.840579710144929" y="95.758928571428569"/>
+            <point key="canvasLocation" x="928.98550724637687" y="95.758928571428569"/>
         </scene>
         <!--PushViewController-->
         <scene sceneID="NmD-dA-3SH">
@@ -465,7 +465,7 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="I6c-JA-na4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="664" y="-121"/>
+            <point key="canvasLocation" x="1573.913043478261" y="-121.20535714285714"/>
         </scene>
         <!--Timer-->
         <scene sceneID="L26-JG-dsp">
@@ -475,7 +475,28 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iHh-Vs-fRX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="707" y="106"/>
+            <point key="canvasLocation" x="1616.6666666666667" y="105.80357142857143"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="ifM-PD-0sN">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="44H-t9-T3D" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="u3A-xf-iXj">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="gLa-uj-R6P">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </toolbar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="dTs-CV-Kai"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WsV-Pe-D8O" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="18.840579710144929" y="95.758928571428569"/>
         </scene>
     </scenes>
     <resources>
