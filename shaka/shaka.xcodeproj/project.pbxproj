@@ -24,6 +24,15 @@
 		790F25612891317A00054B54 /* TimerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 790F25602891317A00054B54 /* TimerViewController.swift */; };
 		7928591F28919D1E0054683A /* TimerButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7928591E28919D1E0054683A /* TimerButton.swift */; };
 		79E3A355289274D5009FD5EF /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 79E3A354289274D5009FD5EF /* FirebaseAuth */; };
+		D4B11B4E2896AC4B005F75BA /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D4B11B4C2896AC4B005F75BA /* Interface.storyboard */; };
+		D4B11B502896AC4C005F75BA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D4B11B4F2896AC4C005F75BA /* Assets.xcassets */; };
+		D4B11B562896AC4C005F75BA /* shakaWatch WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = D4B11B552896AC4C005F75BA /* shakaWatch WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		D4B11B5B2896AC4C005F75BA /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4B11B5A2896AC4C005F75BA /* InterfaceController.swift */; };
+		D4B11B5D2896AC4C005F75BA /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4B11B5C2896AC4C005F75BA /* ExtensionDelegate.swift */; };
+		D4B11B5F2896AC4C005F75BA /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4B11B5E2896AC4C005F75BA /* NotificationController.swift */; };
+		D4B11B612896AC4C005F75BA /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4B11B602896AC4C005F75BA /* ComplicationController.swift */; };
+		D4B11B632896AC4D005F75BA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D4B11B622896AC4C005F75BA /* Assets.xcassets */; };
+		D4B11B682896AC4D005F75BA /* shakaWatch.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = D4B11B4A2896AC4B005F75BA /* shakaWatch.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		EED801D02893BD6A006945A2 /* SurfRecord.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EED801CF2893BD6A006945A2 /* SurfRecord.storyboard */; };
 		EED801D42893BE04006945A2 /* SurfDateCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EED801D32893BE04006945A2 /* SurfDateCollectionViewCell.swift */; };
 		EED801D62893C186006945A2 /* ColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EED801D52893C186006945A2 /* ColorExtension.swift */; };
@@ -39,6 +48,48 @@
 		F9CB689928852C8E002723F2 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F9CB689828852C8E002723F2 /* Login.storyboard */; };
 		F9CB689B288533F1002723F2 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9CB689A288533F1002723F2 /* LoginViewController.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D4B11B572896AC4C005F75BA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7547FCE2287FECA700A8FA9A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D4B11B542896AC4C005F75BA;
+			remoteInfo = "shakaWatch WatchKit Extension";
+		};
+		D4B11B662896AC4D005F75BA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7547FCE2287FECA700A8FA9A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D4B11B492896AC4B005F75BA;
+			remoteInfo = shakaWatch;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		D4B11B692896AC4D005F75BA /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				D4B11B682896AC4D005F75BA /* shakaWatch.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D4B11B6C2896AC4D005F75BA /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				D4B11B562896AC4C005F75BA /* shakaWatch WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		753A009E2893971600186F91 /* PushViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushViewController.swift; sourceTree = "<group>"; };
@@ -59,6 +110,17 @@
 		790F255E2891315B00054B54 /* Timer.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Timer.storyboard; sourceTree = "<group>"; };
 		790F25602891317A00054B54 /* TimerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerViewController.swift; sourceTree = "<group>"; };
 		7928591E28919D1E0054683A /* TimerButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerButton.swift; sourceTree = "<group>"; };
+		D4B11B4A2896AC4B005F75BA /* shakaWatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = shakaWatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D4B11B4D2896AC4B005F75BA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		D4B11B4F2896AC4C005F75BA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D4B11B552896AC4C005F75BA /* shakaWatch WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "shakaWatch WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D4B11B5A2896AC4C005F75BA /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		D4B11B5C2896AC4C005F75BA /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		D4B11B5E2896AC4C005F75BA /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		D4B11B602896AC4C005F75BA /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
+		D4B11B622896AC4C005F75BA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D4B11B642896AC4D005F75BA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D4B11B652896AC4D005F75BA /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
 		EED801CF2893BD6A006945A2 /* SurfRecord.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SurfRecord.storyboard; sourceTree = "<group>"; };
 		EED801D32893BE04006945A2 /* SurfDateCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurfDateCollectionViewCell.swift; sourceTree = "<group>"; };
 		EED801D52893C186006945A2 /* ColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtension.swift; sourceTree = "<group>"; };
@@ -82,6 +144,13 @@
 			files = (
 				F940EE40288FB2A70090F733 /* FirebaseAuth in Frameworks */,
 				79E3A355289274D5009FD5EF /* FirebaseAuth in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D4B11B522896AC4C005F75BA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -124,6 +193,8 @@
 				7547FD0B287FF70F00A8FA9A /* .gitattributes */,
 				7547FD09287FF66700A8FA9A /* .gitignore */,
 				7547FCEC287FECA700A8FA9A /* shaka */,
+				D4B11B4B2896AC4B005F75BA /* shakaWatch */,
+				D4B11B592896AC4C005F75BA /* shakaWatch WatchKit Extension */,
 				7547FCEB287FECA700A8FA9A /* Products */,
 			);
 			sourceTree = "<group>";
@@ -132,6 +203,8 @@
 			isa = PBXGroup;
 			children = (
 				7547FCEA287FECA700A8FA9A /* shaka.app */,
+				D4B11B4A2896AC4B005F75BA /* shakaWatch.app */,
+				D4B11B552896AC4C005F75BA /* shakaWatch WatchKit Extension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -155,6 +228,29 @@
 				7547FD07287FF58500A8FA9A /* .swiftlint.yml */,
 			);
 			path = shaka;
+			sourceTree = "<group>";
+		};
+		D4B11B4B2896AC4B005F75BA /* shakaWatch */ = {
+			isa = PBXGroup;
+			children = (
+				D4B11B4C2896AC4B005F75BA /* Interface.storyboard */,
+				D4B11B4F2896AC4C005F75BA /* Assets.xcassets */,
+			);
+			path = shakaWatch;
+			sourceTree = "<group>";
+		};
+		D4B11B592896AC4C005F75BA /* shakaWatch WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				D4B11B5A2896AC4C005F75BA /* InterfaceController.swift */,
+				D4B11B5C2896AC4C005F75BA /* ExtensionDelegate.swift */,
+				D4B11B5E2896AC4C005F75BA /* NotificationController.swift */,
+				D4B11B602896AC4C005F75BA /* ComplicationController.swift */,
+				D4B11B622896AC4C005F75BA /* Assets.xcassets */,
+				D4B11B642896AC4D005F75BA /* Info.plist */,
+				D4B11B652896AC4D005F75BA /* PushNotificationPayload.apns */,
+			);
+			path = "shakaWatch WatchKit Extension";
 			sourceTree = "<group>";
 		};
 		EED801EE28950F6A006945A2 /* DataModel */ = {
@@ -185,10 +281,12 @@
 				7547FCE6287FECA700A8FA9A /* Sources */,
 				7547FCE7287FECA700A8FA9A /* Frameworks */,
 				7547FCE8287FECA700A8FA9A /* Resources */,
+				D4B11B692896AC4D005F75BA /* Embed Watch Content */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				D4B11B672896AC4D005F75BA /* PBXTargetDependency */,
 			);
 			name = shaka;
 			packageProductDependencies = (
@@ -198,6 +296,40 @@
 			productName = shaka;
 			productReference = 7547FCEA287FECA700A8FA9A /* shaka.app */;
 			productType = "com.apple.product-type.application";
+		};
+		D4B11B492896AC4B005F75BA /* shakaWatch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D4B11B702896AC4D005F75BA /* Build configuration list for PBXNativeTarget "shakaWatch" */;
+			buildPhases = (
+				D4B11B482896AC4B005F75BA /* Resources */,
+				D4B11B6C2896AC4D005F75BA /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D4B11B582896AC4C005F75BA /* PBXTargetDependency */,
+			);
+			name = shakaWatch;
+			productName = shakaWatch;
+			productReference = D4B11B4A2896AC4B005F75BA /* shakaWatch.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		D4B11B542896AC4C005F75BA /* shakaWatch WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D4B11B6F2896AC4D005F75BA /* Build configuration list for PBXNativeTarget "shakaWatch WatchKit Extension" */;
+			buildPhases = (
+				D4B11B512896AC4C005F75BA /* Sources */,
+				D4B11B522896AC4C005F75BA /* Frameworks */,
+				D4B11B532896AC4C005F75BA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "shakaWatch WatchKit Extension";
+			productName = "shakaWatch WatchKit Extension";
+			productReference = D4B11B552896AC4C005F75BA /* shakaWatch WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -210,6 +342,12 @@
 				LastUpgradeCheck = 1340;
 				TargetAttributes = {
 					7547FCE9287FECA700A8FA9A = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
+					D4B11B492896AC4B005F75BA = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
+					D4B11B542896AC4C005F75BA = {
 						CreatedOnToolsVersion = 13.4.1;
 					};
 				};
@@ -232,6 +370,8 @@
 			projectRoot = "";
 			targets = (
 				7547FCE9287FECA700A8FA9A /* shaka */,
+				D4B11B492896AC4B005F75BA /* shakaWatch */,
+				D4B11B542896AC4C005F75BA /* shakaWatch WatchKit Extension */,
 			);
 		};
 /* End PBXProject section */
@@ -252,6 +392,23 @@
 				EEE91EB3289693A900449283 /* GoogleService-Info.plist in Resources */,
 				7547FCF7287FECA800A8FA9A /* Assets.xcassets in Resources */,
 				7547FCF5287FECA700A8FA9A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D4B11B482896AC4B005F75BA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D4B11B502896AC4C005F75BA /* Assets.xcassets in Resources */,
+				D4B11B4E2896AC4B005F75BA /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D4B11B532896AC4C005F75BA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D4B11B632896AC4D005F75BA /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -303,7 +460,31 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		D4B11B512896AC4C005F75BA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D4B11B5F2896AC4C005F75BA /* NotificationController.swift in Sources */,
+				D4B11B612896AC4C005F75BA /* ComplicationController.swift in Sources */,
+				D4B11B5D2896AC4C005F75BA /* ExtensionDelegate.swift in Sources */,
+				D4B11B5B2896AC4C005F75BA /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D4B11B582896AC4C005F75BA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D4B11B542896AC4C005F75BA /* shakaWatch WatchKit Extension */;
+			targetProxy = D4B11B572896AC4C005F75BA /* PBXContainerItemProxy */;
+		};
+		D4B11B672896AC4D005F75BA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D4B11B492896AC4B005F75BA /* shakaWatch */;
+			targetProxy = D4B11B662896AC4D005F75BA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		7547FCF3287FECA700A8FA9A /* Main.storyboard */ = {
@@ -320,6 +501,14 @@
 				7547FCF9287FECA800A8FA9A /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		D4B11B4C2896AC4B005F75BA /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D4B11B4D2896AC4B005F75BA /* Base */,
+			);
+			name = Interface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -503,6 +692,118 @@
 			};
 			name = Release;
 		};
+		D4B11B6A2896AC4D005F75BA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5MNSFLP2V9;
+				GENERATE_INFOPLIST_FILE = YES;
+				IBSC_MODULE = shakaWatch_WatchKit_Extension;
+				INFOPLIST_KEY_CFBundleDisplayName = shakaWatch;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = com.i3e2.shaka;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.i3e2.shaka.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 8.5;
+			};
+			name = Debug;
+		};
+		D4B11B6B2896AC4D005F75BA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5MNSFLP2V9;
+				GENERATE_INFOPLIST_FILE = YES;
+				IBSC_MODULE = shakaWatch_WatchKit_Extension;
+				INFOPLIST_KEY_CFBundleDisplayName = shakaWatch;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = com.i3e2.shaka;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.i3e2.shaka.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 8.5;
+			};
+			name = Release;
+		};
+		D4B11B6D2896AC4D005F75BA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "shakaWatch WatchKit Extension/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "shakaWatch WatchKit Extension";
+				INFOPLIST_KEY_CLKComplicationPrincipalClass = "$(PRODUCT_MODULE_NAME).ComplicationController";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_WKExtensionDelegateClassName = "$(PRODUCT_MODULE_NAME).ExtensionDelegate";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.i3e2.shaka.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 8.5;
+			};
+			name = Debug;
+		};
+		D4B11B6E2896AC4D005F75BA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "shakaWatch WatchKit Extension/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "shakaWatch WatchKit Extension";
+				INFOPLIST_KEY_CLKComplicationPrincipalClass = "$(PRODUCT_MODULE_NAME).ComplicationController";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_WKExtensionDelegateClassName = "$(PRODUCT_MODULE_NAME).ExtensionDelegate";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.i3e2.shaka.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 8.5;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -520,6 +821,24 @@
 			buildConfigurations = (
 				7547FCFF287FECA800A8FA9A /* Debug */,
 				7547FD00287FECA800A8FA9A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D4B11B6F2896AC4D005F75BA /* Build configuration list for PBXNativeTarget "shakaWatch WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D4B11B6D2896AC4D005F75BA /* Debug */,
+				D4B11B6E2896AC4D005F75BA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D4B11B702896AC4D005F75BA /* Build configuration list for PBXNativeTarget "shakaWatch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D4B11B6A2896AC4D005F75BA /* Debug */,
+				D4B11B6B2896AC4D005F75BA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
