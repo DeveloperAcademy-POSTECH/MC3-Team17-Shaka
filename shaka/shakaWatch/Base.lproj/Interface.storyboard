@@ -37,12 +37,12 @@
                             <items>
                                 <button width="0.5" alignment="center" verticalAlignment="center" title="Stop" id="LX7-ei-md5">
                                     <connections>
-                                        <action selector="StopButton" destination="AgC-eL-Hgc" id="34Y-gC-JpM"/>
+                                        <action selector="stopButton" destination="AgC-eL-Hgc" id="34Y-gC-JpM"/>
                                     </connections>
                                 </button>
                                 <button width="0.5" alignment="center" verticalAlignment="center" title="Start" id="3ZL-N8-i9X">
                                     <connections>
-                                        <action selector="StartButton" destination="AgC-eL-Hgc" id="AMf-sU-VZO"/>
+                                        <action selector="startButton" destination="AgC-eL-Hgc" id="AMf-sU-VZO"/>
                                     </connections>
                                 </button>
                             </items>
