@@ -151,7 +151,6 @@ extension TimerViewController: WCSessionDelegate {
             self.totalTimeLabel.text = value
             self.totalCount = receiceCount ?? 0
             self.isSurfing = surfing ?? false
-//            self.startPauseAction()
         }
     }
     

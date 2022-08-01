@@ -201,7 +201,6 @@ extension InterfaceController: WCSessionDelegate {
             self.surfTimer.setText(value)
             self.surfTimerCounter = receiceCount ?? 0
             self.isSurfing = surfing ?? false
-            self.startButton()
         }
     }
     
