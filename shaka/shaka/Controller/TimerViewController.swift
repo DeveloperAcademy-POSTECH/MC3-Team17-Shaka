@@ -66,6 +66,7 @@ class TimerViewController: UIViewController {
         totalCount = 0
         sendMessegeToWatch(message: "00 : 00 : 00")
         print(timeResult)
+        self.navigationController?.popViewController(animated: true)
     }
     // 메세지 전송
     func sendMessegeToWatch(message: String) {
