@@ -17,7 +17,6 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         surfImage.layer.cornerRadius = 10
         goSurfView.layer.cornerRadius = 10
         goSurfView.layer.cornerRadius = 10
