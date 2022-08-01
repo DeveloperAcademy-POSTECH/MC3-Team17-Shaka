@@ -40,19 +40,21 @@
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SubLogo" translatesAutoresizingMaskIntoConstraints="NO" id="SDb-Ka-l06">
                                                         <rect key="frame" x="0.0" y="0.0" width="105" height="46"/>
                                                     </imageView>
-                                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FrG-s8-GWG">
+                                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="-10" translatesAutoresizingMaskIntoConstraints="NO" id="FrG-s8-GWG">
                                                         <rect key="frame" x="296" y="0.0" width="78" height="46"/>
                                                         <subviews>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lub-Zd-c0C">
-                                                                <rect key="frame" x="0.0" y="0.0" width="59" height="46"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="67" height="46"/>
+                                                                <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <state key="normal" title="Button"/>
-                                                                <buttonConfiguration key="configuration" style="plain" image="CloudIcon"/>
+                                                                <buttonConfiguration key="configuration" style="plain" image="bell.badge" catalog="system" title=""/>
                                                                 <connections>
                                                                     <segue destination="b7k-Z4-qbk" kind="show" id="hAj-ay-gZ4"/>
                                                                 </connections>
                                                             </button>
-                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="DoorIcon" translatesAutoresizingMaskIntoConstraints="NO" id="eBu-e0-2af">
-                                                                <rect key="frame" x="59" y="0.0" width="19" height="46"/>
+                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="gearshape" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="eBu-e0-2af">
+                                                                <rect key="frame" x="57" y="0.0" width="21" height="46"/>
+                                                                <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             </imageView>
                                                         </subviews>
                                                         <constraints>
@@ -219,10 +221,10 @@
                                                 <rect key="frame" x="20" y="20" width="334" height="150"/>
                                                 <subviews>
                                                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tjz-ux-f1o">
-                                                        <rect key="frame" x="0.0" y="0.0" width="118.5" height="43"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="105" height="43"/>
                                                         <subviews>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="가장 가까운 해변은" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HLC-qq-ZqD">
-                                                                <rect key="frame" x="0.0" y="0.0" width="118.5" height="43"/>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="지금 계신 해변은" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HLC-qq-ZqD" userLabel="지금 계신 해변은">
+                                                                <rect key="frame" x="0.0" y="0.0" width="105" height="43"/>
                                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
                                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <nil key="highlightedColor"/>
@@ -275,7 +277,7 @@
                                                 <rect key="frame" x="0.0" y="0.0" width="374" height="190"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="plain"/>
+                                                <buttonConfiguration key="configuration" style="plain" title=""/>
                                                 <connections>
                                                     <segue destination="y0a-8a-jui" kind="show" id="Pgc-jw-BBc"/>
                                                 </connections>
@@ -413,23 +415,6 @@
                                                     <color key="baseForegroundColor" name="MainFontColor"/>
                                                 </buttonConfiguration>
                                             </button>
-                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="LdY-Mu-pFO">
-                                                <rect key="frame" x="139.5" y="66" width="95" height="24"/>
-                                                <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="이용약관 및 개인정보처리방침" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0vx-Rg-p0o">
-                                                        <rect key="frame" x="0.0" y="0.0" width="95" height="10"/>
-                                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="8"/>
-                                                        <color key="textColor" name="SubFontColor"/>
-                                                        <nil key="highlightedColor"/>
-                                                    </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="계정 탈퇴하기" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hqm-Rt-rjW">
-                                                        <rect key="frame" x="25.5" y="14" width="44" height="10"/>
-                                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="8"/>
-                                                        <color key="textColor" name="SubFontColor"/>
-                                                        <nil key="highlightedColor"/>
-                                                    </label>
-                                                </subviews>
-                                            </stackView>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Coffee" translatesAutoresizingMaskIntoConstraints="NO" id="58X-o1-GBW">
                                                 <rect key="frame" x="14" y="5" width="39" height="40"/>
                                                 <constraints>
@@ -440,13 +425,11 @@
                                         </subviews>
                                         <constraints>
                                             <constraint firstItem="58X-o1-GBW" firstAttribute="leading" secondItem="Lmb-dw-pTc" secondAttribute="leading" constant="14" id="4lR-Bi-HBA"/>
-                                            <constraint firstItem="LdY-Mu-pFO" firstAttribute="top" secondItem="0XS-Zj-wgk" secondAttribute="bottom" constant="16" id="8Sl-jq-1j8"/>
                                             <constraint firstItem="0XS-Zj-wgk" firstAttribute="leading" secondItem="Lmb-dw-pTc" secondAttribute="leading" id="LE4-4Z-kLA"/>
                                             <constraint firstAttribute="trailing" secondItem="0XS-Zj-wgk" secondAttribute="trailing" id="VGH-kh-Nwf"/>
                                             <constraint firstAttribute="height" constant="98" id="aRG-CY-uSH"/>
                                             <constraint firstItem="0XS-Zj-wgk" firstAttribute="top" secondItem="Lmb-dw-pTc" secondAttribute="top" id="e8J-ms-zzf"/>
                                             <constraint firstItem="0XS-Zj-wgk" firstAttribute="leading" secondItem="Lmb-dw-pTc" secondAttribute="leading" id="hFP-23-5hx"/>
-                                            <constraint firstItem="LdY-Mu-pFO" firstAttribute="centerX" secondItem="0XS-Zj-wgk" secondAttribute="centerX" id="hwt-Iv-hkk"/>
                                             <constraint firstItem="0XS-Zj-wgk" firstAttribute="top" secondItem="Lmb-dw-pTc" secondAttribute="top" id="lRw-nO-hWd"/>
                                             <constraint firstAttribute="trailing" secondItem="0XS-Zj-wgk" secondAttribute="trailing" id="lvY-XR-bb1"/>
                                             <constraint firstItem="58X-o1-GBW" firstAttribute="centerY" secondItem="0XS-Zj-wgk" secondAttribute="centerY" id="ssc-bQ-nXo"/>
@@ -520,13 +503,13 @@
     </scenes>
     <resources>
         <image name="Beach" width="109.5" height="108.5"/>
-        <image name="CloudIcon" width="20" height="24"/>
         <image name="Coffee" width="109.5" height="108.5"/>
-        <image name="DoorIcon" width="19" height="18"/>
         <image name="MainBackground" width="4875" height="3250"/>
         <image name="SubLogo" width="106" height="46"/>
         <image name="Surf" width="109.5" height="108.5"/>
+        <image name="bell.badge" catalog="system" width="128" height="124"/>
         <image name="chevron.right" catalog="system" width="96" height="128"/>
+        <image name="gearshape" catalog="system" width="128" height="121"/>
         <namedColor name="CardBackgroundColor">
             <color red="0.93699997663497925" green="0.94499999284744263" blue="0.97299998998641968" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
