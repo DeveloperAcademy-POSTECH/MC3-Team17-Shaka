@@ -1,4 +1,4 @@
-<img width="1134" alt="스크린샷 2022-08-01 오후 4 59 16" src="https://user-images.githubusercontent.com/77766769/182102110-ce60684b-d663-4b43-8b61-0ee53119ea48.png">
+<img width="1134" alt="스크린샷 2022-08-01 오후 6 22 27" src="https://user-images.githubusercontent.com/77766769/182117183-ef3c87bc-d747-451b-8fc3-67e4a253a0f4.png">
 
 
 # :iphone: Shaka
@@ -29,6 +29,7 @@ Make your surfing record easier. Check out your actual surfing history through S
 ![App Screenshot](https://user-images.githubusercontent.com/77766769/182102910-a66e0ee1-67ec-44d8-96c5-0b4eed3625fa.gif)
 ![App Screenshot](https://user-images.githubusercontent.com/77766769/182102914-4cd3d955-ce2e-4bf5-a11f-0a08afbddf0f.gif)
 ![App Screenshot](https://user-images.githubusercontent.com/77766769/182102917-da6e41ef-c6d3-4a14-9f53-b479b8f5ba86.gif)
+<img src="https://user-images.githubusercontent.com/77766769/182116389-4bdcf09b-a6d4-4259-87f9-6ffaeb37cd46.gif" width="300">
 
 ## :sparkles: Tech & Design & Communication   Stack
 
