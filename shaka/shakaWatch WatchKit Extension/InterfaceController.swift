@@ -4,7 +4,6 @@
 //
 //  Created by Hyung Seo Han on 2022/07/31.
 //
-
 import WatchKit
 import WatchConnectivity
 import Foundation
@@ -37,6 +36,7 @@ class InterfaceController: WKInterfaceController {
     override func awake(withContext context: Any?) {
         super.awake(withContext: context)
         configureWCSession()
+        setNotifications()
         print("awake")
     }
     
@@ -58,19 +58,17 @@ class InterfaceController: WKInterfaceController {
         }
     }
     
+    
     override func didDeactivate() {
         // This method is called when watch view controller is no longer visible
+        // deactive의 상태로 들어가기 직전 타임스탬프를 찍어서 UserDefault 값으로 설정함
+        // 해당값의 접근 가능하는 방법은 forKey에 적혀져 있는 문자열로 접근 가능
+        UserDefaults.standard.setValue(Date(), forKey: "deactiveStartedStamp")
         
-        print("Deactivate")
-        self.deactiveTimeCounter = 0
-        self.deactiveTime = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(deactiveTimeCount), userInfo: nil, repeats: true)
-        willActivate()
+        surfTime.invalidate()
+        // 인식할 Notification의 네이밍 설정
+        Foundation.NotificationCenter.default.post(name: NSNotification.Name("deactivated"), object: nil)
     }
-    //
-    //    override func willDisappear() {
-    //        print("Disappear")
-    //        test()
-    //    }
     
     func detectingStandStatus() {
         if CMAltimeter.isRelativeAltitudeAvailable() {
@@ -96,6 +94,12 @@ class InterfaceController: WKInterfaceController {
                 }
             })
         }
+    }
+    
+    // 각각 알림에 대한 옵저버 선언
+    func setNotifications() {
+        Foundation.NotificationCenter.default.addObserver(self, selector: #selector(printDeactivation), name: NSNotification.Name("deactivated"), object: nil)
+        Foundation.NotificationCenter.default.addObserver(self, selector: #selector(printBackgroundTime(_:)), name: NSNotification.Name("applicationDidBecomeActive"), object: nil)
     }
     
     @IBAction func startButton() {
@@ -143,7 +147,6 @@ class InterfaceController: WKInterfaceController {
     }
     
     @objc func deactiveTimeCount() {
-        print("SHibal")
         deactiveTimeCounter += 1
     }
     
@@ -158,6 +161,21 @@ class InterfaceController: WKInterfaceController {
         let timeLabelString = hours + " : " + minutes + " : " + seconds
         
         return timeLabelString
+    }
+    
+    @objc func printBackgroundTime(_ notification: Notification) {
+        if isSurfing {
+            let time = notification.userInfo?["time"] as? Int ?? 0
+            surfTimerCounter += time
+            surfTimer.setText(makeTimeLabelString(count: surfTimerCounter))
+            surfTime = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(surfTimeCount), userInfo: nil, repeats: true)
+        } else {
+            print("Ya ho~")
+        }
+    }
+    
+    @objc func printDeactivation() {
+        print("Deactivated")
     }
 }
 
@@ -175,7 +193,7 @@ extension InterfaceController: WCSessionDelegate {
     }
     
     func session(_ session: WCSession, didReceiveMessage message: [String: Any], replyHandler: @escaping ([String: Any]) -> Void) {
-//        print(message)
+        //        print(message)
         let value = message["Value"] as? String
         let receiceCount = message["Count"] as? Int
         let surfing = message["Check"] as? Bool
