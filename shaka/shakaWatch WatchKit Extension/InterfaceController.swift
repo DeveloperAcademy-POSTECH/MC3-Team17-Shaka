@@ -18,6 +18,7 @@ class InterfaceController: WKInterfaceController {
     // label from storyboard
     @IBOutlet var surfTimer: WKInterfaceLabel!
     @IBOutlet var standTimer: WKInterfaceLabel!
+    @IBOutlet var startButtonLabel: WKInterfaceButton!
     
     // altimeter and timer
     var altimeter = CMAltimeter()
@@ -59,7 +60,7 @@ class InterfaceController: WKInterfaceController {
 //        test()
 //    }
     
-    func test() {
+    func detectingStandStatus() {
         if CMAltimeter.isRelativeAltitudeAvailable() {
             self.altimeter.startRelativeAltitudeUpdates(to: OperationQueue.main, withHandler: { (altitudeData: CMAltitudeData?, _ error: Error?)in
                 guard let altitudeData = altitudeData else { return }
@@ -86,14 +87,26 @@ class InterfaceController: WKInterfaceController {
     }
 
     @IBAction func startButton() {
-        test()
-        isSurfing.toggle()
-        surfTime = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(surfTimeCount), userInfo: nil, repeats: true)
+        if isSurfing{
+            isSurfing = false
+            surfTime.invalidate()
+            startButtonLabel.setTitle("Start")
+        }
+        else{
+            detectingStandStatus()
+            isSurfing = true
+            surfTime = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(surfTimeCount), userInfo: nil, repeats: true)
+            startButtonLabel.setTitle("Pause")
+        }
     }
     
     @IBAction func stopButton() {
-        isSurfing.toggle()
+        isSurfing = false
         surfTime.invalidate()
+        surfTimer.setText("00 : 00 : 00")
+        startButtonLabel.setTitle("Start")
+        surfTimerCounter = 0
+        standTimerCounter = 0
     }
     
     @objc func surfTimeCount() {

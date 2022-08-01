@@ -50,6 +50,7 @@
                     </items>
                     <connections>
                         <outlet property="standTimer" destination="NiU-tJ-AD0" id="tdL-Yx-MgB"/>
+                        <outlet property="startButtonLabel" destination="3ZL-N8-i9X" id="40U-3g-M3x"/>
                         <outlet property="surfTimer" destination="weo-Gs-XcT" id="h7A-sy-mfC"/>
                     </connections>
                 </controller>
