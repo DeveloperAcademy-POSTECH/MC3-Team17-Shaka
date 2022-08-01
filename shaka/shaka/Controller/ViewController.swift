@@ -9,24 +9,41 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    @IBOutlet weak var getWaterButton: UIButton!
     @IBOutlet weak var surfImage: UIImageView!
     @IBOutlet weak var cardBackground: UIView!
+    @IBOutlet weak var getWaterButton: UIView!
+    @IBOutlet weak var outWaterButton: UIView!
+    @IBOutlet weak var goSurfView: UIView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        getWaterButton.layer.shadowColor = UIColor.gray.cgColor
         surfImage.layer.cornerRadius = 10
-        surfImage.layer.shadowOffset = CGSize(width: 5, height: 5)
-        surfImage.layer.shadowOpacity = 0.7
-        surfImage.layer.shadowRadius = 5
-        surfImage.layer.shadowColor = UIColor.gray.cgColor
+        goSurfView.layer.cornerRadius = 10
+        goSurfView.layer.cornerRadius = 10
+        
+        goSurfView.layer.shadowOffset = CGSize(width: 1, height: 1)
+        goSurfView.layer.shadowOpacity = 0.2
+        goSurfView.layer.shadowRadius = 10
         
         cardBackground.layer.cornerRadius = 10
+        
+        getWaterButton.layer.cornerRadius = 10
+        getWaterButton.layer.shadowOffset = CGSize(width: 1, height: 1)
+        getWaterButton.layer.shadowOpacity = 0.2
+        getWaterButton.layer.shadowRadius = 10
+        getWaterButton.isUserInteractionEnabled = true
+        getWaterButton.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(getWaterTapped(_:))))
+        
+        outWaterButton.layer.cornerRadius = 10
+        outWaterButton.layer.shadowOffset = CGSize(width: 1, height: 1)
+        outWaterButton.layer.shadowOpacity = 0.2
+        outWaterButton.layer.shadowRadius = 10
+        outWaterButton.isUserInteractionEnabled = true
+        outWaterButton.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(outWaterTapped(_:))))
     }
-
-    @IBAction func getWaterTapped(_ sender: Any) {
+    
+    @objc func getWaterTapped(_ sender: UITapGestureRecognizer) {
         guard let url = URL(string: "https://boat.kcg.go.kr/home/wtrlsrActInfo/weathrSpcnwsDclr/infoView1.do") else {
             return
         }
@@ -35,7 +52,7 @@ class ViewController: UIViewController {
         present(navVC, animated: true)
     }
     
-    @IBAction func offWaterTapped(_ sender: Any) {
+    @objc func outWaterTapped(_ sender: UITapGestureRecognizer) {
         guard let url = URL(string: "https://boat.kcg.go.kr/home/common/cert_info.do") else {
             return
         }
@@ -43,5 +60,4 @@ class ViewController: UIViewController {
         let navVC = UINavigationController(rootViewController: webVC)
         present(navVC, animated: true)
     }
-    
 }
