@@ -39,7 +39,7 @@
 		EED801E828941D41006945A2 /* SurfRecordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EED801E728941D41006945A2 /* SurfRecordViewController.swift */; };
 		EED801EA28942468006945A2 /* SurfRecordData.swift in Sources */ = {isa = PBXBuildFile; fileRef = EED801E928942468006945A2 /* SurfRecordData.swift */; };
 		EED801EC28942C80006945A2 /* MockData.swift in Sources */ = {isa = PBXBuildFile; fileRef = EED801EB28942C80006945A2 /* MockData.swift */; };
-		EEE91EB3289693A900449283 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = EEE91EB2289693A900449283 /* GoogleService-Info.plist */; };
+		EEE91EB528979C1500449283 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = EEE91EB428979C1500449283 /* GoogleService-Info.plist */; };
 		F940EE40288FB2A70090F733 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = F940EE3F288FB2A70090F733 /* FirebaseAuth */; };
 		F940EE42288FB7A50090F733 /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F940EE41288FB7A50090F733 /* SignupViewController.swift */; };
 		F940EE452891076D0090F733 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = F940EE442891076D0090F733 /* User.swift */; };
@@ -127,7 +127,7 @@
 		EED801E728941D41006945A2 /* SurfRecordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurfRecordViewController.swift; sourceTree = "<group>"; };
 		EED801E928942468006945A2 /* SurfRecordData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurfRecordData.swift; sourceTree = "<group>"; };
 		EED801EB28942C80006945A2 /* MockData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockData.swift; sourceTree = "<group>"; };
-		EEE91EB2289693A900449283 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		EEE91EB428979C1500449283 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		F940EE41288FB7A50090F733 /* SignupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
 		F940EE442891076D0090F733 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		F940EE46289107DB0090F733 /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
@@ -224,7 +224,7 @@
 				F9CB689C2885386E002723F2 /* shaka.entitlements */,
 				7547FCF6287FECA800A8FA9A /* Assets.xcassets */,
 				7547FCFB287FECA800A8FA9A /* Info.plist */,
-				EEE91EB2289693A900449283 /* GoogleService-Info.plist */,
+				EEE91EB428979C1500449283 /* GoogleService-Info.plist */,
 				7547FD07287FF58500A8FA9A /* .swiftlint.yml */,
 			);
 			path = shaka;
@@ -389,7 +389,7 @@
 				790F255F2891315B00054B54 /* Timer.storyboard in Resources */,
 				7547FD08287FF58500A8FA9A /* .swiftlint.yml in Resources */,
 				7547FCFA287FECA800A8FA9A /* LaunchScreen.storyboard in Resources */,
-				EEE91EB3289693A900449283 /* GoogleService-Info.plist in Resources */,
+				EEE91EB528979C1500449283 /* GoogleService-Info.plist in Resources */,
 				7547FCF7287FECA800A8FA9A /* Assets.xcassets in Resources */,
 				7547FCF5287FECA700A8FA9A /* Main.storyboard in Resources */,
 			);
