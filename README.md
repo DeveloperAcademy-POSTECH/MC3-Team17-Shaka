@@ -46,7 +46,7 @@ Make your surfing record easier. Check out your actual surfing history through S
 
 
 ### 💬 Communication
-- Ryber
+- Ryver
 - Notion
 - Github 
 - [Swift](https://docs.swift.org/swift-book/)
